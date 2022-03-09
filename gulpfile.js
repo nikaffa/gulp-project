@@ -1,9 +1,9 @@
-const { src, dest, watch } = require("gulp");
+const { src, dest, watch, parallel, series } = require("gulp");
 const sass = require('gulp-sass')(require('sass'));
-const sync = require("browser-sync").create();
 const ejs = require("gulp-ejs");
 const rename = require("gulp-rename");
 const eslint = require("gulp-eslint");
+const sync = require("browser-sync").create();
 
 const generateCSS = (cb) => {
   src('styles/*.scss')
@@ -12,8 +12,6 @@ const generateCSS = (cb) => {
     .pipe(sync.stream());
   cb();
 };
-exports.css = generateCSS;
-
 
 const generateHTML = (cb) => {
   src("views/index.ejs")
@@ -26,8 +24,6 @@ const generateHTML = (cb) => {
     .pipe(dest("public"));
   cb();
 };
-exports.html = generateHTML;
-
 
 const runLinter = (cb) => {
   return src(['**/*.js', '!node_modules/**'])
@@ -38,8 +34,11 @@ const runLinter = (cb) => {
       cb();
     });
 };
-exports.lint = runLinter;
 
+const watchFiles = (cb) => {
+  watch('views/**.ejs', generateHTML);
+  watch('styles/**.scss', generateCSS);
+};
 
 const browserSync = (cb) => {
   sync.init({
@@ -51,4 +50,11 @@ const browserSync = (cb) => {
   watch('styles/*.scss', generateCSS);
   watch("public/**.html").on('change', sync.reload);
 };
+
+exports.css = generateCSS;
+exports.html = generateHTML;
+exports.lint = runLinter;
+exports.watch = watchFiles;
 exports.sync = browserSync;
+
+exports.default = series(runLinter,parallel(generateCSS,generateHTML));
