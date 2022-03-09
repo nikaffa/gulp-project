@@ -1,4 +1,4 @@
-const { src, dest } = require("gulp");
+const { src, dest, watch } = require("gulp");
 const sass = require('gulp-sass')(require('sass'));
 
 const generateCSS = (cb) => {
@@ -9,3 +9,9 @@ const generateCSS = (cb) => {
 };
 
 exports.css = generateCSS;
+
+const watchFiles = (cb) => {
+  watch('styles/*.scss', generateCSS);
+};
+
+exports.watch = watchFiles;
