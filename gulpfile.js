@@ -1,8 +1,11 @@
 const { src, dest } = require("gulp");
+const sass = require('gulp-sass')(require('sass'));
 
-const mytask = (cb) => {
-  console.log("hello");
+const generateCSS = (cb) => {
+  src('styles/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest('public/stylesheets'));
   cb();
 };
 
-exports.mytask = mytask;
+exports.css = generateCSS;
