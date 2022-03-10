@@ -1,0 +1,58 @@
+body {
+  font: 60% Helvetica, sans-serif;
+  color: #333;
+}
+
+header, .my-div {
+  background-color: #333;
+  color: #f4f3e7;
+  height: 80px;
+}
+
+.my-div {
+  font-family: "Grenette Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.container div {
+  text-align: center;
+}
+.container div p {
+  text-decoration: underline;
+}
+.container div:hover {
+  background-color: #f4f3e7;
+}
+
+h1 {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #f4f3e7;
+}
+
+.medium-square {
+  width: 50px;
+  height: 25px;
+}
+
+.large-square {
+  width: 100px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: white;
+    display: none;
+  }
+}
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: yellow;
+    width: 6px;
+  }
+}
