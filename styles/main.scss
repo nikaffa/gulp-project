@@ -3,6 +3,8 @@
 body {
   font: 60% $font-stack;
   color: $primary-color;
+  background-color: $main-color;
+  padding: 50px;
 }
 header {
   background-color: $primary-color;
@@ -52,15 +54,15 @@ h1 {
   @include square(50px);
 }
 
-@media only screen and (min-width: 600px){
-  body {
-    background-color: white;
-    display: none;
-  }
-}
-@media only screen and (orientation: landscape){
-  body {
-    background-color: yellow;
-    width: calc(2 * 3px);
-  }
-}
+// @media only screen and (min-width: 600px){
+//   body {
+//     background-color: white;
+//     display: none;
+//   }
+// }
+// @media only screen and (orientation: landscape){
+//   body {
+//     background-color: yellow;
+//     width: calc(2 * 3px);
+//   }
+// }
