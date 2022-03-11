@@ -1,13 +1,59 @@
 body {
-  font: 60% $font-family;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: $font-family;
   background-color: $primary;
-  padding: 50px;
+  margin: 0;
+  
 }
-// header {
-//   background-color: $primary-color;
-//   color: $main-color;
-//   height: 80px;
-// }
+header {
+  position: absolute;
+  display: flex;
+  
+  align-items: center;
+
+  padding-right: 5%;
+  padding-left: 5%;
+  height: 10vh;
+  
+  background-color: $secondary;
+  
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+.navbar {
+ 
+  display: inline-block;
+  
+  justify-content: space-between;
+  align-items: center;
+  color: $text-color-light;
+
+  width: 1440px;
+  height: 68px;
+  left: 0px;
+  top: 0px;
+}
+.logo {
+  position: absolute;
+  left: 4.17%;
+  right: 84.17%;
+  top: 23.53%;
+  bottom: 23.53%;
+}
+
+.avatar {
+  position: absolute;
+  left: 92.78%;
+  right: 4.17%;
+  top: 17.65%;
+  bottom: 17.65%;
+}
+
 // .my-div{
 //   @extend header;
 //   font-family: $header-font;
