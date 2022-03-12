@@ -3,12 +3,11 @@ position: relative;
 width: 1440px;
 height: 2068px;
 background-color: #171E28;
-  left: 0px;
-  top: 0px;
+margin: 0%;
 
 
 
-  
+
 
   // justify-content: center;
   // align-items: center;
@@ -25,6 +24,7 @@ width: 1440px;
 height: 68px;
 left: 0px;
 top: 0px;
+background: $secondary;
 
   // position: absolute;
   // display: flex;
@@ -35,7 +35,7 @@ top: 0px;
   // padding-left: 5%;
   // height: 10vh;
   
-  // background-color: $secondary;
+  
   
   // left: 0%;
   // right: 0%;
@@ -56,19 +56,23 @@ top: 0px;
   top: 23.53%;
   bottom: 23.53%;
 }
-.navbar {
+.hdr_projects {
   position: absolute;
   left: 19.72%;
   right: 16.11%;
   top: 0%;
   bottom: 0%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 
+// color: $text-color-light;
      
     // display: inline-block;
     
     // justify-content: space-between;
     // align-items: center;
-    // color: $text-color-light;
+    
   
     // width: 1440px;
     // height: 68px;
@@ -83,7 +87,7 @@ top: 0px;
   top: 17.65%;
   bottom: 17.65%;
 }
-.menu-item {
+.menu-item-summary {
 position: absolute;
 left: 2.16%;
 right: 87.66%;
@@ -104,9 +108,11 @@ right: 0%;
 top: 6.9%;
 bottom: 5.6%;
 color: $text-color-light;
+text-decoration: none;
+text-decoration-line: none;
 // font: $14-semibold;
 }
-.line3 {
+.line_3 {
 position: absolute;
 left: 88.61%;
 right: 6.67%;
@@ -115,7 +121,7 @@ bottom: 0%;
 border: 1px solid #3D444E;
 transform: rotate(-90deg);
 }
-.line4 {
+.line_4 {
 position: absolute;
 left: 0%;
 right: 0%;
