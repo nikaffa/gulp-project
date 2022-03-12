@@ -35,12 +35,12 @@ const runLinter = (cb) => {
     });
 };
 
-const watchFiles = () => {
+const watchFiles = (cb) => {
   watch('views/**.ejs', generateHTML);
   watch('styles/**.scss', generateCSS);
 };
 
-const browserSync = () => {
+const browserSync = (cb) => {
   sync.init({
     server: {
       baseDir: "./public"
@@ -49,6 +49,7 @@ const browserSync = () => {
   watch('views/**.ejs', generateHTML);
   watch('styles/*.scss', generateCSS);
   watch("public/**.html").on('change', sync.reload);
+  cb();
 };
 
 exports.css = generateCSS;
