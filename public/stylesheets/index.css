@@ -36,7 +36,7 @@ header {
 .hdr_projects {
   position: absolute;
   left: 19.72%;
-  right: 16.11%;
+  right: 11.11%;
   top: 0%;
   bottom: 0%;
   display: flex;
@@ -47,6 +47,8 @@ header {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .menu_item:hover {
@@ -77,13 +79,7 @@ header nav div a:hover {
 }
 
 .line_3 {
-  position: absolute;
-  left: 88.61%;
-  right: 6.67%;
-  top: 100%;
-  bottom: 0%;
-  border: 1px solid #3D444E;
-  transform: rotate(-90deg);
+  border-right: 1px solid #3D444E;
 }
 
 .line_4 {
