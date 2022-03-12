@@ -49,7 +49,7 @@ const browserSync = (cb) => {
   watch('views/**.ejs', generateHTML);
   watch('styles/*.scss', generateCSS);
   watch("public/**.html").on('change', sync.reload);
-  cb();
+  
 };
 
 exports.css = generateCSS;
