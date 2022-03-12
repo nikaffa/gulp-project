@@ -14,7 +14,7 @@ const generateCSS = (cb) => {
 };
 
 const generateHTML = (cb) => {
-  src("views/index.ejs")
+  src("views/*.ejs")
     .pipe(ejs({
       title: "Hello Cyper",
     }))

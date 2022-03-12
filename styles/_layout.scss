@@ -1,49 +1,64 @@
 body {
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+position: relative;
+width: 1440px;
+height: 2068px;
 
-  font-family: $font-family;
-  background-color: $primary;
-  margin: 0;
+  // justify-content: center;
+  // align-items: center;
+  // min-height: 100vh;
+
+  // font-family: $font-family;
+  // background-color: $primary;
+  // margin: 0;
   
 }
 header {
-  position: absolute;
-  display: flex;
-  
-  align-items: center;
+position: absolute;
+width: 1440px;
+height: 68px;
+left: 0px;
+top: 0px;
 
-  padding-right: 5%;
-  padding-left: 5%;
-  height: 10vh;
+  // position: absolute;
+  // display: flex;
   
-  background-color: $secondary;
+  // align-items: center;
+
+  // padding-right: 5%;
+  // padding-left: 5%;
+  // height: 10vh;
   
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  // background-color: $secondary;
+  
+  // left: 0%;
+  // right: 0%;
+  // top: 0%;
+  // bottom: 0%;
 }
 .navbar {
- 
-  display: inline-block;
+position: absolute;
+left: 19.72%;
+right: 16.11%;
+top: 0%;
+bottom: 0%;
+   
+  // display: inline-block;
   
-  justify-content: space-between;
-  align-items: center;
-  color: $text-color-light;
+  // justify-content: space-between;
+  // align-items: center;
+  // color: $text-color-light;
 
-  width: 1440px;
-  height: 68px;
-  left: 0px;
-  top: 0px;
+  // width: 1440px;
+  // height: 68px;
+  // left: 0px;
+  // top: 0px;
 }
 .logo {
-  position: absolute;
-  left: 4.17%;
-  right: 84.17%;
-  top: 23.53%;
-  bottom: 23.53%;
+position: absolute;
+left: 4.17%;
+right: 84.17%;
+top: 23.53%;
+bottom: 23.53%;
 }
 
 .avatar {
@@ -53,6 +68,47 @@ header {
   top: 17.65%;
   bottom: 17.65%;
 }
+.menu-item {
+position: absolute;
+left: 2.16%;
+right: 87.66%;
+top: 29.41%;
+bottom: 35.29%;
+}
+.icon-summary {
+position: absolute;
+left: 0%;
+right: 74.47%;
+top: -1.44%;
+bottom: 1.44%;
+}
+.text-summary {
+position: absolute;
+left: 29.79%;
+right: 0%;
+top: 6.9%;
+bottom: 5.6%;
+color: $text-color-light;
+// font: $14-semibold;
+}
+.line3 {
+position: absolute;
+left: 88.61%;
+right: 6.67%;
+top: 100%;
+bottom: 0%;
+border: 1px solid #3D444E;
+transform: rotate(-90deg);
+}
+.line4 {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 100%;
+bottom: 0%;
+border: 1px solid #3D444E;
+}
+
 
 // .my-div{
 //   @extend header;
