@@ -4,16 +4,8 @@ position: relative;
 height: 2068px;
 background-color: #171E28;
 margin: 0%;
-
-  // justify-content: center;
-  // align-items: center;
-  // min-height: 100vh;
-
-  // font-family: $font-family;
-  // background-color: $primary;
-  // margin: 0;
-  
 }
+//header
 header {
 position: absolute;
 width: 100%;
@@ -22,22 +14,11 @@ left: 0px;
 top: 0px;
 background: $secondary;
 max-width: 100%;
-  // position: absolute;
- // display: flex;
-  // align-items: center;
-  // padding-right: 5%;
-  // padding-left: 5%;
-  // height: 10vh;
-  
-  // left: 0%;
-  // right: 0%;
-  // top: 0%;
-  // bottom: 0%;
 }
 .logo {
   position: absolute;
-  left: 0%;
-  right: 80.28%;
+  left: 4.17%;
+  right: 84.17%;
   top: 0%;
   bottom: 0%;
 }
@@ -56,18 +37,6 @@ max-width: 100%;
   bottom: 0%;
   display:flex;
   justify-content: space-between;
-  
-     
-    // display: inline-block;
-    
-    // justify-content: space-between;
-    // align-items: center;
-    
-  
-    // width: 1440px;
-    // height: 68px;
-    // left: 0px;
-    // top: 0px;
 }
 .menu_item {
   display: flex;
@@ -75,7 +44,6 @@ max-width: 100%;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  
 };
 .menu_item:hover{
   background: $main-hover;
@@ -83,7 +51,6 @@ max-width: 100%;
   border-radius: 0px 0px 2px 2px;
   border-bottom: $main solid 6px;
 }
-
 .avatar {
   position: absolute;
   left: 92.78%;
@@ -127,13 +94,7 @@ header nav div a:hover {
 
 
 .line_3 {
-// position: absolute;
-// left: 88.61%;
-// right: 6.67%;
-// top: 100%;
-// bottom: 0%;
 border-right: 1px solid #3D444E;
-// transform: rotate(-90deg);
 }
 .line_4 {
 position: absolute;
@@ -143,6 +104,74 @@ top: 100%;
 bottom: 0%;
 border: 1px solid #3D444E;
 }
+
+//filter
+.filters{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+position: absolute;
+width: 900px;
+height: 69px;
+left: 60px;
+top: 108px;
+justify-content: space-evenly;
+}
+.filters_section{
+  // position: absolute;
+  width: 150px;
+  color: $text-color-light;
+  align-self: center;
+}
+@mixin select{
+  background-color: $secondary;
+  color: $text-color-light;
+  border: 1px solid $text-color-light;
+  border-radius: 4px;
+  padding: 10px 12px;
+  width: 100%;
+  margin: 8px 0;
+  top: 137px;
+}
+.select_text{
+  @include select();
+}
+.select_num{
+  @include select();
+}
+
+.btn_apply{
+  width: 96px;
+  height: 40px;
+  background: $main;
+  color: $text-color-main;
+border-radius: 7px;
+padding: 8px 28px;
+}
+.btn_reset{
+  width: 143px;
+height: 40px;
+border: 1px solid #8F7FFF;
+background: $primary;
+color: $main;
+box-sizing: border-box;
+border-radius: 7px;
+padding: 8px 28px;
+  
+}
+input:checked{
+  background-color: $main;
+  color: $text-color-main;
+
+}
+
+
+
+
+
+
+
+
 
 
 // .my-div{

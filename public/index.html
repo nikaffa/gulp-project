@@ -54,14 +54,37 @@
   <div class="line_4"></div>
 </header>
 
-
-    <!-- <div>
-      <div class="filters">
+    
+    <div class="filters">
+      <div class="filters_section">
+        <form>
+          <label for="name">Dev</label><br>
+          <select class="select_text" id="name" name="name">
+            <option value="Jenny Wilson">Jenny Wilson</option>
+          </select>
+        </form>
       </div>
-      <button>Aply</button>
-      <button>Reset filters</button>
+      <div class="filters_section">
+         <form>
+          <label for="status">Status</label><br>
+          <select class="select_text" id="status" name="status">
+            <option value="All Statuses">All Statuses</option>
+          </select>
+      </form>
+      </div>
+      <div class="filters_section ">
+        <form>
+          <input type="checkbox" checked="checked">
+          <label for="efficiency"> Show efficiency</label>
+        </form>
+      </div>
+      <button class="btn_apply">Apply</button>
+      <button class="btn_reset">Reset filters</button>
     </div>
+    
+    
 
+<!-- 
     <div>
       <div>Project Information</div>
       <div>Project Time</div>
