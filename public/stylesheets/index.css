@@ -1,5 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+.font, .font_16, .font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font_16 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* 14 regular */
+.font_14_regular {
+  font-weight: 400;
+  color: #B6B4C6;
+}
+
 /* 14 semibold */
+.font_14_semibold {
+  font-weight: 600;
+  color: #C7BFFF;
+}
+
+/* 14 bold */
+.font_14_bold {
+  font-weight: 700;
+  color: #B6B4C6;
+}
+
+/* 16 regular */
+.font_16_regular {
+  font-weight: 400;
+  color: #B6B4C6;
+}
+
+/* 16 bold */
 body {
   position: relative;
   height: 2068px;
@@ -156,7 +200,7 @@ input:checked {
   color: #FFFFFF;
 }
 
-.proj, .time, .info {
+.proj {
   position: absolute;
   width: 648px;
   height: 606px;
@@ -183,6 +227,17 @@ input:checked {
   top: 6.6%;
   bottom: 0.17%;
   text-align: center;
+  margin: 0 10%;
+}
+
+table, .table_proj_info {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
 }
 
 .decor {
@@ -190,3 +245,46 @@ input:checked {
   border-radius: 7px 0px 0px 7px;
   transform: rotate(-180deg);
 }
+
+.font, .font_14, .font_16, .font_14_regular, .font_14_semibold, .font_14_bold, .font_16_regular {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font_14, .font_14_regular, .font_14_semibold, .font_14_bold, .font_16_regular {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font_16 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* 14 regular */
+.font_14_regular {
+  font-weight: 400;
+  color: #B6B4C6;
+}
+
+/* 14 semibold */
+.font_14_semibold {
+  font-weight: 600;
+  color: #C7BFFF;
+}
+
+/* 14 bold */
+.font_14_bold {
+  font-weight: 700;
+  color: #B6B4C6;
+}
+
+/* 16 regular */
+.font_16_regular {
+  font-weight: 400;
+  color: #B6B4C6;
+}
+
+/* 16 bold */

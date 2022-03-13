@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'fonts';
+
 body {
 position: relative;
 // width: 1440px;
@@ -181,11 +184,11 @@ border-radius: 7px;
   @include border();
 }
 .info {
-  @extend .proj;
+  // @extend .proj;
   left: 60px;
 }
 .time {
-  @extend .proj;
+  // @extend .proj;
   left: 732px;
 }
 .content {
@@ -195,6 +198,19 @@ border-radius: 7px;
   top: 6.6%;
   bottom: 0.17%;
   text-align: center;
+  margin: 0 10%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.table_proj_info {
+  @extend table;
+  
+}
+td {
+  padding: 8px;
 }
 
 

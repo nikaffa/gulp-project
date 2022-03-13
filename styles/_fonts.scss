@@ -1,0 +1,46 @@
+//variables & functions
+@import 'variables';
+
+.font {
+  font-family: $font-family;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.font_14 {
+  @extend .font;
+  font-size: 14px;
+  line-height: 21px;
+}
+.font_16 {
+  @extend .font;
+  font-size: 16px;
+  line-height: 22px;
+}
+/* 14 regular */
+.font_14_regular {
+  @extend .font_14;
+  font-weight: 400;
+  color: $text-color-light;
+}
+
+/* 14 semibold */
+.font_14_semibold {
+  @extend .font_14;
+  font-weight: 600;
+  color: $text-color-primary;
+}
+  /* 14 bold */
+.font_14_bold {
+  @extend .font_14;
+  font-weight: 700;
+  color: $text-color-light;
+}
+  
+/* 16 regular */
+.font_16_regular {
+  @extend .font_14;
+  font-weight: 400;
+  color: $text-color-light;
+}
+/* 16 bold */
