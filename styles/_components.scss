@@ -58,7 +58,7 @@ bottom: 0%;
 border: 1px solid #3D444E;
 }
 
-//card: filter
+//filters
 .filters{
   display:flex;
   flex-direction: row;
@@ -118,47 +118,20 @@ border-radius: 7px;
 padding: 8px 28px;  
 }
 
-//card: proj info
-@mixin border{
-  border: 1px solid #3D444E;
-  box-sizing: border-box;
-  border-radius: 7px;
-  }
-.proj {
-  position: absolute;
-  width: 648px;
-  height: 606px;
-  top: 209px;
-  background: $secondary;
-  color: $color-main;
-  @include border();
-}
-.info {
-  // @extend .proj;
-  left: 60px;
-}
-.time {
-  // @extend .proj;
-  left: 732px;
-}
-.content {
-  position: absolute;
-  left: 0.15%;
-  right: 0.15%;
-  top: 6.6%;
-  bottom: 0.17%;
-  text-align: center;
-  margin: 0 10%;
-}
+//tables
+
+
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-}
-.table_proj_info {
-  @extend table;
-  
-}
-td {
+  td {
   padding: 8px;
+  }
 }
+// .table_proj_info {
+//   @extend table;
+  
+// }
+
+

@@ -7,13 +7,20 @@
 //fonts
 @import 'fonts';
 
+//utilities (borders, margin, padding, opacity)
+@import 'utilities';
+
 //base & layout 
 @import 'layout';
 
-//components (cards, buttons, navbar, footer)
+//components (buttons, navbar, footer)
 @import 'components';
 
-//utilities (margin, padding, opacity)
-@import 'utilities';
+//card components
+@import 'card';
+
+
+
+
 
  

@@ -1,0 +1,30 @@
+
+.card {
+  position: absolute;
+  background: $secondary;
+  @include border(7px, $additional);
+  .content {
+    position: absolute;
+    left: 0.15%;
+    right: 0.15%;
+    top: 6.6%;
+    bottom: 0.17%;
+    text-align: center;
+    margin: 0 10%;
+  }
+
+}
+.proj{
+@extend .card;
+width: 648px;
+height: 606px;
+top: 209px;
+}
+.info {
+  @extend .proj;
+  left: 60px;
+}
+.time {
+  @extend .proj;
+  left: 732px;
+}
