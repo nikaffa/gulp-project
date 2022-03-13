@@ -21,26 +21,22 @@
 .font_14_regular {
   @extend .font_14;
   font-weight: 400;
-  color: $text-color-light;
 }
 
 /* 14 semibold */
 .font_14_semibold {
   @extend .font_14;
   font-weight: 600;
-  color: $text-color-primary;
 }
   /* 14 bold */
 .font_14_bold {
   @extend .font_14;
   font-weight: 700;
-  color: $text-color-light;
 }
   
 /* 16 regular */
 .font_16_regular {
   @extend .font_14;
   font-weight: 400;
-  color: $text-color-light;
 }
 /* 16 bold */

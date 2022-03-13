@@ -1,6 +1,24 @@
+@import 'variables';
+
 .decor {
   background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
   border-radius: 7px 0px 0px 7px;
   transform: rotate(-180deg);
+}
+
+.color-light {
+  color: $color-light;
+}
+.color-main {
+  color: $color-main;
+}
+.color-primary {
+  color: $color-primary;;
+}
+.color-error {
+  color: $color-error;
+}
+.color-additional {
+  color: $color-additional;
 }
 
