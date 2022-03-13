@@ -1,12 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-.font, .font_16, .font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
+.decor {
+  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+  border-radius: 7px 0px 0px 7px;
+  transform: rotate(-180deg);
+}
+
+.color-light {
+  color: #B6B4C6;
+}
+
+.color-main {
+  color: #FFFFFF;
+}
+
+.color-primary {
+  color: #C7BFFF;
+}
+
+.color-error {
+  color: #FF6A59;
+}
+
+.color-additional {
+  color: #27AE60;
+}
+
+.font, .font_16, .font_16_bold, .font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 21px;
 }
 
 .font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
@@ -14,7 +36,7 @@
   line-height: 21px;
 }
 
-.font_16 {
+.font_16, .font_16_bold {
   font-size: 16px;
   line-height: 22px;
 }
@@ -22,30 +44,31 @@
 /* 14 regular */
 .font_14_regular {
   font-weight: 400;
-  color: #B6B4C6;
 }
 
 /* 14 semibold */
 .font_14_semibold {
   font-weight: 600;
-  color: #C7BFFF;
 }
 
 /* 14 bold */
 .font_14_bold {
   font-weight: 700;
-  color: #B6B4C6;
 }
 
 /* 16 regular */
 .font_16_regular {
   font-weight: 400;
-  color: #B6B4C6;
 }
 
 /* 16 bold */
+.font_16_bold {
+  font-weight: 700;
+}
+
 body {
   position: relative;
+  width: 1440px;
   height: 2068px;
   background-color: #171E28;
   margin: 0%;
@@ -59,6 +82,16 @@ header {
   top: 0px;
   background: #242B35;
   max-width: 100%;
+}
+header nav div a {
+  color: #B6B4C6;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+header nav div a:hover {
+  color: #8F7FFF;
+  text-decoration: none;
+  text-decoration-line: none;
 }
 
 .logo {
@@ -108,18 +141,6 @@ header {
   right: 4.17%;
   top: 17.65%;
   bottom: 17.65%;
-}
-
-header nav div a {
-  color: #B6B4C6;
-  text-decoration: none;
-  text-decoration-line: none;
-}
-
-header nav div a:hover {
-  color: #8F7FFF;
-  text-decoration: none;
-  text-decoration-line: none;
 }
 
 .line_3 {
@@ -175,6 +196,11 @@ header nav div a:hover {
   top: 137px;
 }
 
+input:checked {
+  background-color: #8F7FFF;
+  color: #FFFFFF;
+}
+
 .btn_apply {
   width: 96px;
   height: 40px;
@@ -193,11 +219,6 @@ header nav div a:hover {
   box-sizing: border-box;
   border-radius: 7px;
   padding: 8px 28px;
-}
-
-input:checked {
-  background-color: #8F7FFF;
-  color: #FFFFFF;
 }
 
 .proj {
@@ -239,52 +260,3 @@ table, .table_proj_info {
 td {
   padding: 8px;
 }
-
-.decor {
-  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
-  border-radius: 7px 0px 0px 7px;
-  transform: rotate(-180deg);
-}
-
-.font, .font_14, .font_16, .font_14_regular, .font_14_semibold, .font_14_bold, .font_16_regular {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.font_14, .font_14_regular, .font_14_semibold, .font_14_bold, .font_16_regular {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.font_16 {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-/* 14 regular */
-.font_14_regular {
-  font-weight: 400;
-  color: #B6B4C6;
-}
-
-/* 14 semibold */
-.font_14_semibold {
-  font-weight: 600;
-  color: #C7BFFF;
-}
-
-/* 14 bold */
-.font_14_bold {
-  font-weight: 700;
-  color: #B6B4C6;
-}
-
-/* 16 regular */
-.font_16_regular {
-  font-weight: 400;
-  color: #B6B4C6;
-}
-
-/* 16 bold */

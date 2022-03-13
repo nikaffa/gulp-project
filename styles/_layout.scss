@@ -1,10 +1,6 @@
-@import 'variables';
-@import 'fonts';
-@import 'colors';
-
 body {
 position: relative;
-// width: 1440px;
+width: 1440px;
 height: 2068px;
 background-color: #171E28;
 margin: 0%;
@@ -18,50 +14,18 @@ left: 0px;
 top: 0px;
 background: $secondary;
 max-width: 100%;
+  nav div a {
+    color: $color-light;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  nav div a:hover {
+    color: $main;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
 }
-.logo {
-  position: absolute;
-  left: 4.17%;
-  right: 84.17%;
-  top: 0%;
-  bottom: 0%;
-}
-.logo-image {
-  position: absolute;
-  left: 4.17%;
-  right: 84.17%;
-  top: 23.53%;
-  bottom: 23.53%;
-}
-.hdr_projects {
-  position: absolute;
-  left: 19.72%;
-  right: 11.11%;
-  top: 0%;
-  bottom: 0%;
-  display:flex;
-  justify-content: space-between;
-}
-.menu_item {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-};
-.menu_item:hover{
-  background: $main-hover;
-  text-decoration-color: $main;
-  border-radius: 0px 0px 2px 2px;
-  border-bottom: $main solid 6px;
-}
-.avatar {
-  position: absolute;
-  left: 92.78%;
-  right: 4.17%;
-  top: 17.65%;
-  bottom: 17.65%;
-}
+
 // .menu-item-summary {
 // position: absolute;
 // left: 2.16%;
@@ -85,139 +49,6 @@ max-width: 100%;
 // bottom: 5.6%;
 // // font: $14-semibold;
 // }
-header nav div a {
-  color: $text-color-light;
-  text-decoration: none;
-  text-decoration-line: none;
-}
-header nav div a:hover {
-  color: $main;
-  text-decoration: none;
-  text-decoration-line: none;
-}
-
-
-.line_3 {
-border-right: 1px solid #3D444E;
-}
-.line_4 {
-position: absolute;
-left: 0%;
-right: 0%;
-top: 100%;
-bottom: 0%;
-border: 1px solid #3D444E;
-}
-
-//filter
-.filters{
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-position: absolute;
-width: 900px;
-height: 69px;
-left: 60px;
-top: 108px;
-justify-content: space-evenly;
-}
-.filters_section{
-  // position: absolute;
-  width: 150px;
-  color: $text-color-light;
-  align-self: center;
-}
-@mixin select{
-  background-color: $secondary;
-  color: $text-color-light;
-  border: 1px solid $text-color-light;
-  border-radius: 4px;
-  padding: 10px 12px;
-  width: 100%;
-  margin: 8px 0;
-  top: 137px;
-}
-.select_text{
-  @include select();
-}
-.select_num{
-  @include select();
-}
-
-.btn_apply{
-  width: 96px;
-  height: 40px;
-  background: $main;
-  color: $text-color-main;
-border-radius: 7px;
-padding: 8px 28px;
-}
-.btn_reset{
-  width: 143px;
-height: 40px;
-border: 1px solid #8F7FFF;
-background: $primary;
-color: $main;
-box-sizing: border-box;
-border-radius: 7px;
-padding: 8px 28px;
-  
-}
-input:checked{
-  background-color: $main;
-  color: $text-color-main;
-
-}
-
-//proj info tab
-@mixin border{
-border: 1px solid #3D444E;
-box-sizing: border-box;
-border-radius: 7px;
-}
-.proj {
-  position: absolute;
-  width: 648px;
-  height: 606px;
-  top: 209px;
-  background: $secondary;
-  color: $text-color-main;
-  @include border();
-}
-.info {
-  // @extend .proj;
-  left: 60px;
-}
-.time {
-  // @extend .proj;
-  left: 732px;
-}
-.content {
-  position: absolute;
-  left: 0.15%;
-  right: 0.15%;
-  top: 6.6%;
-  bottom: 0.17%;
-  text-align: center;
-  margin: 0 10%;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-.table_proj_info {
-  @extend table;
-  
-}
-td {
-  padding: 8px;
-}
-
-
-
-
-
 
 
 
