@@ -165,6 +165,37 @@ input:checked{
 
 }
 
+//proj info tab
+@mixin border{
+border: 1px solid #3D444E;
+box-sizing: border-box;
+border-radius: 7px;
+}
+.proj {
+  position: absolute;
+  width: 648px;
+  height: 606px;
+  top: 209px;
+  background: $secondary;
+  color: $text-color-main;
+  @include border();
+}
+.info {
+  @extend .proj;
+  left: 60px;
+}
+.time {
+  @extend .proj;
+  left: 732px;
+}
+.content {
+  position: absolute;
+  left: 0.15%;
+  right: 0.15%;
+  top: 6.6%;
+  bottom: 0.17%;
+  text-align: center;
+}
 
 
 

@@ -156,6 +156,35 @@ input:checked {
   color: #FFFFFF;
 }
 
+.proj, .time, .info {
+  position: absolute;
+  width: 648px;
+  height: 606px;
+  top: 209px;
+  background: #242B35;
+  color: #FFFFFF;
+  border: 1px solid #3D444E;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.info {
+  left: 60px;
+}
+
+.time {
+  left: 732px;
+}
+
+.content {
+  position: absolute;
+  left: 0.15%;
+  right: 0.15%;
+  top: 6.6%;
+  bottom: 0.17%;
+  text-align: center;
+}
+
 .decor {
   background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
   border-radius: 7px 0px 0px 7px;
