@@ -28,3 +28,16 @@ top: 209px;
   @extend .proj;
   left: 732px;
 }
+.tag{
+  @include border(15px, $color-border);
+  align-items: center;
+  padding: 3px 12px;
+  width: 29%;
+  flex-direction: row;
+  display: flex;
+//   position: absolute;
+// left: 29.63%;
+// right: 54.94%;
+// top: 57.59%;
+// bottom: 38.45%;
+}

@@ -221,13 +221,21 @@ input:checked {
   padding: 8px 28px;
 }
 
-table {
+table, .proj_time {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
 }
-table td {
-  padding: 8px;
+table td, .proj_time td {
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+table td:last-child, .proj_time td:last-child {
+  white-space: normal;
+}
+
+.proj_time td {
+  border-bottom: 1px solid #3D444E;
 }
 
 .card, .proj, .time, .info {
@@ -259,4 +267,15 @@ table td {
 
 .time {
   left: 732px;
+}
+
+.tag {
+  border: 1px solid #6F68C6;
+  box-sizing: border-box;
+  border-radius: 15px;
+  align-items: center;
+  padding: 3px 12px;
+  width: 29%;
+  flex-direction: row;
+  display: flex;
 }

@@ -119,19 +119,29 @@ padding: 8px 28px;
 }
 
 //tables
-
-
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
   td {
-  padding: 8px;
+  padding: 8px 12px;
+  white-space: nowrap;
+    &:last-child{
+      white-space: normal;
+    }
+    // &:nth-child(14) {
+    //   white-space: normal;
+    // }
   }
 }
-// .table_proj_info {
-//   @extend table;
-  
-// }
+.proj_time {
+  @extend table;
+  th{
+
+  }
+  td {
+    border-bottom: 1px solid $additional;
+  }
+}
 
 
