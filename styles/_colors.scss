@@ -4,19 +4,21 @@
   transform: rotate(-180deg);
 }
 
-.color-light {
-  color: $color-light;
-}
-.color_main {
-  color: $color-main;
-}
-.color-primary {
-  color: $color-primary;;
-}
-.color-error {
-  color: $color-error;
-}
-.color-additional {
-  color: $color-additional;
+// main color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "main": $main,
+  "white": $white,
+  "light": $light,
+  "lil": $lil,
+  "error": $error,
+  "green": $green
+);
+
+@each $key, $val in $colors {
+  .color-#{$key} {
+    color: $val;
+  }
 }
 

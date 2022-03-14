@@ -5,15 +5,27 @@
   transform: rotate(-180deg);
 }
 
+.color-primary {
+  color: #171E28;
+}
+
+.color-secondary {
+  color: #242B35;
+}
+
+.color-main {
+  color: #8F7FFF;
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
 .color-light {
   color: #B6B4C6;
 }
 
-.color_main {
-  color: #FFFFFF;
-}
-
-.color-primary {
+.color-lil {
   color: #C7BFFF;
 }
 
@@ -21,7 +33,7 @@
   color: #FF6A59;
 }
 
-.color-additional {
+.color-green {
   color: #27AE60;
 }
 

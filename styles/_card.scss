@@ -29,7 +29,7 @@ top: 209px;
   left: 732px;
 }
 .tag{
-  @include border(15px, $color-border);
+  @include border(15px, $border);
   align-items: center;
   padding: 3px 12px;
   width: 29%;

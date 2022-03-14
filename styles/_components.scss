@@ -73,13 +73,13 @@ justify-content: space-evenly;
 .filters_section{
   // position: absolute;
   width: 150px;
-  color: $color-light;
+  color: $light;
   align-self: center;
 }
 @mixin select{
   background-color: $secondary;
-  color: $color-light;
-  border: $base-border solid $color-light;
+  color: $light;
+  border: $base-border solid $light;
   border-radius: 4px;
   padding: 10px 12px;
   width: 100%;
@@ -94,7 +94,7 @@ justify-content: space-evenly;
 }
 input:checked{
   background-color: $main;
-  color: $color-main;
+  color: $white;
 
 }
 
@@ -103,7 +103,7 @@ input:checked{
   width: 96px;
   height: 40px;
   background: $main;
-  color: $color-main;
+  color: $white;
 border-radius: 7px;
 padding: 8px 28px;
 }
