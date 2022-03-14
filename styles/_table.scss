@@ -1,0 +1,22 @@
+//tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  td {
+  @include padding(4, 6);
+  white-space: nowrap;
+    &:last-child{
+      white-space: normal;
+    }
+  }
+}
+.proj_time {
+  @extend table;
+  th{
+
+  }
+  td {
+    border-bottom: $base-border solid $additional;
+  }
+}

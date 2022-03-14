@@ -13,7 +13,16 @@
 //base & layout 
 @import 'layout';
 
-//components (navbar, footer)
+//navbar
+@import 'navbar';
+
+//filters component
+@import 'filters';
+
+//ftable component
+@import 'table';
+
+//small components
 @import 'components';
 
 //button component

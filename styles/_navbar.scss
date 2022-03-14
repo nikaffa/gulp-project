@@ -1,0 +1,29 @@
+//nav
+
+.hdr_projects {
+  @include layout-elem(19.72%, 11.11%, 0%, 0%);
+  @extend %flex-layout;
+  // display:flex;
+  // justify-content: space-between;
+}
+.menu_item {
+  @extend %flex-layout;
+  &:hover{
+    background: $main-hover;
+    text-decoration-color: $main;
+    border-radius: 0px 2px ;
+    border-bottom: $base-border * 6 solid $main;
+    box-sizing: border-box;
+  }
+}
+
+//logo
+.logo {
+  @include layout-elem(4.17%, 84.17%, 23.53%, 23.53%)
+}
+
+
+//avatar
+.avatar {
+  @include layout-elem(92.78%, 4.17%, 17.65%, 17.65%)
+}

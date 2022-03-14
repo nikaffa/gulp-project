@@ -1,34 +1,4 @@
-//components (buttons, navbar, footer)
-
-//logo
-.logo {
-  @include layout-elem(4.17%, 84.17%, 23.53%, 23.53%)
-}
-
-//nav
-.hdr_projects {
-  @include layout-elem(19.72%, 11.11%, 0%, 0%);
-  display:flex;
-  justify-content: space-between;
-}
-.menu_item {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-
-  &:hover{
-    background: $main-hover;
-    text-decoration-color: $main;
-    border-radius: 0px 2px ;
-    border-bottom: $base-border * 6 solid $main;
-  }
-}
-//avatar
-.avatar {
-  @include layout-elem(92.78%, 4.17%, 17.65%, 17.65%)
-}
+//small components
 
 //lines
 .line {
@@ -39,33 +9,15 @@
   @include layout-elem(0%, 0%, 100%, 0%);
 }
 
-//filters
-.filters{
-display:flex;
-flex-direction: row;
-align-items: center;
-position: absolute;
-width: 900px;
-height: 69px;
-left: 60px;
-top: 108px;
-justify-content: space-evenly;
-}
-.filters_section{
-  // position: absolute;
-  width: 150px;
-  color: $light;
-  align-self: center;
-}
+//select form
 @mixin select{
   background-color: $secondary;
   color: $light;
-  border: $base-border solid $light;
-  border-radius: 4px;
   width: 100%;
   top: 137px;
-  @include margin(8 px, 0);
+  @include margin(8px, 0);
   @include padding(5, 6);
+  @include border(4px, $light)
 }
 .select_text{
   @include select();
@@ -73,35 +25,14 @@ justify-content: space-evenly;
 .select_num{
   @include select();
 }
+
+//checkbox form
 input[type="checkbox"]{
   background-color: $main;
   color: $white;
 }
 
-//tables
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  td {
-  @include padding(4, 6);
-  white-space: nowrap;
-    &:last-child{
-      white-space: normal;
-    }
-  }
-}
-.proj_time {
-  @extend table;
-  th{
-
-  }
-  td {
-    border-bottom: $base-border solid $additional;
-  }
-}
-
-//decor
+//decors
 .decor {
   position: absolute;
 left: 0%;
@@ -115,6 +46,7 @@ bottom: 23.6%;
   border-radius: 7px 0px 0px 7px;
   transform: rotate(-180deg);
 }
+
 //scroll
 .scroll {
   position: absolute;

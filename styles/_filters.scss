@@ -1,0 +1,17 @@
+//filters container
+.filters{
+  @extend %flex-layout;
+  flex-direction: row;
+  position: absolute;
+  justify-content: space-evenly;
+  width: 900px;
+  height: 69px;
+  left: 25px;
+  top: 108px;
+  }
+  .filters_section{
+    // position: absolute;
+    width: 150px;
+    color: $light;
+    align-self: center;
+  }

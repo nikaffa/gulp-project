@@ -11,6 +11,13 @@
   top: $top;
   bottom: $bm;
 }
+%flex-layout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100%;
+  flex-grow: 1;
+}
 @mixin a ($color: $light) {
   text-decoration: none;
   text-decoration-line: none;
