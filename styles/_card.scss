@@ -10,7 +10,7 @@
     top: 6.6%;
     bottom: 0.17%;
     text-align: center;
-    @include margin(0, 10%);
+    margin: 0 0 4% 10%; //fix
   }
 
 }
@@ -40,4 +40,8 @@ top: 209px;
 // right: 54.94%;
 // top: 57.59%;
 // bottom: 38.45%;
+}
+
+.scrolling-box{
+  overflow-y: scroll;
 }

@@ -3,12 +3,11 @@
 .hdr_projects {
   @include layout-elem(19.72%, 11.11%, 0%, 0%);
   @extend %flex-layout;
-  // display:flex;
-  // justify-content: space-between;
 }
 .menu_item {
   @extend %flex-layout;
   &:hover{
+    height: 100%;
     background: $main-hover;
     text-decoration-color: $main;
     border-radius: 0px 2px ;
@@ -21,7 +20,6 @@
 .logo {
   @include layout-elem(4.17%, 84.17%, 23.53%, 23.53%)
 }
-
 
 //avatar
 .avatar {

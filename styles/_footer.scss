@@ -1,0 +1,15 @@
+footer div{
+  display: flex;
+    width: 50%;
+  position: absolute;
+  
+  height: 18px;
+  left: 576px;
+  top: 2040px;
+  color: $white;
+
+  span {
+    color: $main;
+
+  }
+}

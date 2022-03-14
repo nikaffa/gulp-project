@@ -115,6 +115,7 @@ header nav div a:hover {
 }
 
 .menu_item:hover {
+  height: 100%;
   background: rgba(143, 127, 255, 0.15);
   text-decoration-color: #8F7FFF;
   border-radius: 0px 2px;
@@ -136,6 +137,19 @@ header nav div a:hover {
   right: 4.17%;
   top: 17.65%;
   bottom: 17.65%;
+}
+
+footer div {
+  display: flex;
+  width: 50%;
+  position: absolute;
+  height: 18px;
+  left: 576px;
+  top: 2040px;
+  color: #FFFFFF;
+}
+footer div span {
+  color: #8F7FFF;
 }
 
 .filters {
@@ -281,7 +295,7 @@ input[type=checkbox] {
   top: 6.6%;
   bottom: 0.17%;
   text-align: center;
-  margin: 0 10%;
+  margin: 0 0 4% 10%;
 }
 
 .proj, .time, .info {
@@ -307,4 +321,8 @@ input[type=checkbox] {
   width: 29%;
   flex-direction: row;
   display: flex;
+}
+
+.scrolling-box {
+  overflow-y: scroll;
 }
