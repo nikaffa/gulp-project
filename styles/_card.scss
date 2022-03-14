@@ -10,7 +10,7 @@
     top: 6.6%;
     bottom: 0.17%;
     text-align: center;
-    margin: 0 10%;
+    @include margin(0, 10%);
   }
 
 }
@@ -31,7 +31,7 @@ top: 209px;
 .tag{
   @include border(15px, $border);
   align-items: center;
-  padding: 3px 12px;
+  @include padding(1, 6); //3, 12 fix
   width: 29%;
   flex-direction: row;
   display: flex;

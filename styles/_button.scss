@@ -4,7 +4,7 @@ width: $width;
 height: 40px;
 background: $bg-color;
 color: $color;
-@include padding();
+@include padding(4, 14);
 @include border (7px, $main);
 }
 

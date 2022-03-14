@@ -2,26 +2,12 @@
 
 //logo
 .logo {
-  position: absolute;
-  left: 4.17%;
-  right: 84.17%;
-  top: 0%;
-  bottom: 0%;
+  @include layout-elem(4.17%, 84.17%, 23.53%, 23.53%)
 }
-.logo-image {
-  position: absolute;
-  left: 4.17%;
-  right: 84.17%;
-  top: 23.53%;
-  bottom: 23.53%;
-}
+
 //nav
 .hdr_projects {
-  position: absolute;
-  left: 19.72%;
-  right: 11.11%;
-  top: 0%;
-  bottom: 0%;
+  @include layout-elem(19.72%, 11.11%, 0%, 0%);
   display:flex;
   justify-content: space-between;
 }
@@ -35,30 +21,22 @@
   &:hover{
     background: $main-hover;
     text-decoration-color: $main;
-    border-radius: 0px 0px 2px 2px;
-    border-bottom: $main solid 6px;
+    border-radius: 0px 2px ;
+    border-bottom: $base-border * 6 solid $main;
   }
 }
 //avatar
 .avatar {
-  position: absolute;
-  left: 92.78%;
-  right: 4.17%;
-  top: 17.65%;
-  bottom: 17.65%;
+  @include layout-elem(92.78%, 4.17%, 17.65%, 17.65%)
 }
 
 //lines
-.line_3 {
-  border-right: $base-border solid #3D444E;
+.line {
+  @include border(0, $additional);  
 }
 .line_4 {
-position: absolute;
-left: 0%;
-right: 0%;
-top: 100%;
-bottom: 0%;
-border: $base-border solid #3D444E;
+  @extend .line;
+  @include layout-elem(0%, 0%, 100%, 0%);
 }
 
 //filters
@@ -84,10 +62,10 @@ justify-content: space-evenly;
   color: $light;
   border: $base-border solid $light;
   border-radius: 4px;
-  padding: 10px 12px;
   width: 100%;
-  margin: 8px 0;
   top: 137px;
+  @include margin(8 px, 0);
+  @include padding(5, 6);
 }
 .select_text{
   @include select();
@@ -106,7 +84,7 @@ table {
   border-collapse: collapse;
   text-align: left;
   td {
-  padding: 8px 12px;
+  @include padding(4, 6);
   white-space: nowrap;
     &:last-child{
       white-space: normal;

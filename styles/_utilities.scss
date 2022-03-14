@@ -5,7 +5,9 @@
   box-sizing: border-box;
   border-radius: $radius;
 }
-
-@mixin padding{
-  padding: 8px 28px;
+@mixin margin ($k1: 0%, $k2: 0%){
+  margin:$k1 $k2;
+}
+@mixin padding ($k: 1, $k2: 1){
+  padding: 2px * $k 2px * $k2;
 }

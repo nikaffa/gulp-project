@@ -1,28 +1,38 @@
-body {
-position: relative;
-width: 1440px;
-height: 2068px;
-background-color: #171E28;
-margin: 0%;
+@mixin layout-main($position, $width, $height, $bg-color){
+  position: $position;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
 }
-//header
+@mixin layout-elem($left, $right, $top, $bm){
+  position: absolute;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bm;
+}
+@mixin a ($color: $light) {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: $color  
+}
+
+body {
+  @include layout-main(relative, 1440px, 2068px, $primary); 
+  @include margin();
+}
+
 header {
-position: absolute;
-width: 100%;
-height: 68px;
-left: 0px;
-top: 0px;
-background: $secondary;
-max-width: 100%;
+  @include layout-main(absolute, 100%, 68px, $secondary);
+  left: 0px;
+  top: 0px;
+  max-width: 100%;
+
   nav div a {
-    color: $light;
-    text-decoration: none;
-    text-decoration-line: none;
-  }
-  nav div a:hover {
-    color: $main;
-    text-decoration: none;
-    text-decoration-line: none;
+    @include a;
+    &:hover {
+      @include a($main)
+    }
   }
 }
 
