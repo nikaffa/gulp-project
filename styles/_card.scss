@@ -41,7 +41,13 @@ top: 209px;
 // top: 57.59%;
 // bottom: 38.45%;
 }
-
+.eff {
+  @extend .card;
+  width: 1320px;
+height: 263px;
+left: 60px;
+top: 839px;
+}
 .scrolling-box{
   overflow-y: scroll;
 }

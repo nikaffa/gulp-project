@@ -1,4 +1,9 @@
 //tables
+.tables {
+  @extend %flex-layout;
+  flex-direction: row;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -10,13 +15,16 @@ table {
       white-space: normal;
     }
   }
+  th {
+    text-align: left;
+  }
 }
 .proj_time {
   @extend table;
   th{
-
+    text-align: left;
   }
   td {
     border-bottom: $base-border solid $additional;
   }
-}
+};

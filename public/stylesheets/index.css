@@ -71,7 +71,7 @@
   font-weight: 700;
 }
 
-.filters, .menu_item, .hdr_projects {
+.tables, .filters, .menu_item, .hdr_projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,6 +168,10 @@ footer div span {
   align-self: center;
 }
 
+.tables {
+  flex-direction: row;
+}
+
 table, .proj_time {
   width: 100%;
   border-collapse: collapse;
@@ -180,7 +184,13 @@ table td, .proj_time td {
 table td:last-child, .proj_time td:last-child {
   white-space: normal;
 }
+table th, .proj_time th {
+  text-align: left;
+}
 
+.proj_time th {
+  text-align: left;
+}
 .proj_time td {
   border-bottom: 1px solid #3D444E;
 }
@@ -228,18 +238,22 @@ input[type=checkbox] {
   color: #FFFFFF;
 }
 
-.decor, .decor-med {
+.decor, .decor-sm, .decor-med {
   position: absolute;
   left: 0%;
   right: 98.77%;
   top: 23.6%;
   bottom: 23.6%;
-}
-
-.decor-med {
   background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
   border-radius: 7px 0px 0px 7px;
   transform: rotate(-180deg);
+}
+
+.decor-sm {
+  left: 0%;
+  right: 99.47%;
+  top: 19.77%;
+  bottom: 19.39%;
 }
 
 .scroll {
@@ -281,14 +295,14 @@ input[type=checkbox] {
   color: #8F7FFF;
 }
 
-.card, .proj, .time, .info {
+.card, .eff, .proj, .time, .info {
   position: absolute;
   background: #242B35;
   border: 1px solid #3D444E;
   box-sizing: border-box;
   border-radius: 7px;
 }
-.card .content, .proj .content, .time .content, .info .content {
+.card .content, .eff .content, .proj .content, .time .content, .info .content {
   position: absolute;
   left: 0.15%;
   right: 0.15%;
@@ -321,6 +335,13 @@ input[type=checkbox] {
   width: 29%;
   flex-direction: row;
   display: flex;
+}
+
+.eff {
+  width: 1320px;
+  height: 263px;
+  left: 60px;
+  top: 839px;
 }
 
 .scrolling-box {
