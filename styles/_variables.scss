@@ -21,3 +21,10 @@ $base-line-height: 21px;
 $base-font-weight: 400;
 
 $base-border: 1px;
+
+//functions
+@function light-comp($color) {
+  $complement: complement($color);
+  $light-complement: lighten($complement, 5);
+  @return $light-complement;
+}

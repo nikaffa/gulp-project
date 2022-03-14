@@ -11,13 +11,13 @@ color: $color;
 .btn_apply{
 @include btn(96px, $main, $white);
   &:hover {
-    background-color: lighten($main, 5)
+    background-color: light-comp($main)
   }
 }
 .btn_reset{
 @include btn(143px);
   &:hover {
-    background-color: $main;
-    color: $white
+    background-color: light-comp($main);
+    color: $main
   }
 }

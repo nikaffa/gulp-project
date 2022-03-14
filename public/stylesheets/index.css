@@ -250,7 +250,7 @@ table td:last-child, .proj_time td:last-child {
   border-radius: 7px;
 }
 .btn_apply:hover {
-  background-color: #a599ff;
+  background-color: #f2ff99;
 }
 
 .btn_reset {
@@ -264,8 +264,8 @@ table td:last-child, .proj_time td:last-child {
   border-radius: 7px;
 }
 .btn_reset:hover {
-  background-color: #8F7FFF;
-  color: #FFFFFF;
+  background-color: #f2ff99;
+  color: #8F7FFF;
 }
 
 .card, .proj, .time, .info {
