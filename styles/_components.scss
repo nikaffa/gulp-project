@@ -55,7 +55,7 @@ left: 0%;
 right: 0%;
 top: 100%;
 bottom: 0%;
-border: 1px solid #3D444E;
+border: $base-border solid #3D444E;
 }
 
 //filters
@@ -79,7 +79,7 @@ justify-content: space-evenly;
 @mixin select{
   background-color: $secondary;
   color: $color-light;
-  border: 1px solid $color-light;
+  border: $base-border solid $color-light;
   border-radius: 4px;
   padding: 10px 12px;
   width: 100%;
@@ -110,7 +110,7 @@ padding: 8px 28px;
 .btn_reset{
   width: 143px;
 height: 40px;
-border: 1px solid #8F7FFF;
+border: $base-border solid #8F7FFF;
 background: $primary;
 color: $main;
 box-sizing: border-box;
@@ -129,9 +129,6 @@ table {
     &:last-child{
       white-space: normal;
     }
-    // &:nth-child(14) {
-    //   white-space: normal;
-    // }
   }
 }
 .proj_time {
@@ -140,7 +137,7 @@ table {
 
   }
   td {
-    border-bottom: 1px solid $additional;
+    border-bottom: $base-border solid $additional;
   }
 }
 
