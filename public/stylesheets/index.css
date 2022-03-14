@@ -252,7 +252,12 @@ table td:last-child, .proj_time td:last-child {
   background: #8F7FFF;
   color: #FFFFFF;
   padding: 8px 28px;
+  border: 1px solid #8F7FFF;
+  box-sizing: border-box;
   border-radius: 7px;
+}
+.btn_apply:hover {
+  background-color: #a599ff;
 }
 
 .btn_reset {
@@ -261,9 +266,13 @@ table td:last-child, .proj_time td:last-child {
   background: #171E28;
   color: #8F7FFF;
   padding: 8px 28px;
-  border-radius: 7px;
   border: 1px solid #8F7FFF;
   box-sizing: border-box;
+  border-radius: 7px;
+}
+.btn_reset:hover {
+  background-color: #8F7FFF;
+  color: #FFFFFF;
 }
 
 .card, .proj, .time, .info {

@@ -1,6 +1,11 @@
 //utilities (borders, margin, padding, opacity)
+
 @mixin border($radius, $color){
   border: $base-border solid $color;
   box-sizing: border-box;
   border-radius: $radius;
+}
+
+@mixin padding{
+  padding: 8px 28px;
 }

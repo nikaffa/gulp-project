@@ -4,15 +4,20 @@ width: $width;
 height: 40px;
 background: $bg-color;
 color: $color;
-padding: 8px 28px;
-border-radius: $base-border * 7;  
+@include padding();
+@include border (7px, $main);
 }
 
 .btn_apply{
 @include btn(96px, $main, $white);
+  &:hover {
+    background-color: lighten($main, 5)
+  }
 }
 .btn_reset{
 @include btn(143px);
-border: $base-border solid $main;
-box-sizing: border-box;
+  &:hover {
+    background-color: $main;
+    color: $white
+  }
 }
