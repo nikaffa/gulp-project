@@ -1,0 +1,18 @@
+//buttons
+@mixin btn($width, $bg-color: $primary, $color: $main ) {
+width: $width;
+height: 40px;
+background: $bg-color;
+color: $color;
+padding: 8px 28px;
+border-radius: $base-border * 7;  
+}
+
+.btn_apply{
+@include btn(96px, $main, $white);
+}
+.btn_reset{
+@include btn(143px);
+border: $base-border solid $main;
+box-sizing: border-box;
+}

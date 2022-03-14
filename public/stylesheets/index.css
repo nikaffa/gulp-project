@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-.decor {
-  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
-  border-radius: 7px 0px 0px 7px;
-  transform: rotate(-180deg);
-}
-
 .color-primary {
   color: #171E28;
 }
@@ -138,7 +132,6 @@ header nav div a:hover {
   justify-content: center;
   flex-grow: 1;
 }
-
 .menu_item:hover {
   background: rgba(143, 127, 255, 0.15);
   text-decoration-color: #8F7FFF;
@@ -207,29 +200,9 @@ header nav div a:hover {
   top: 137px;
 }
 
-input:checked {
+input[type=checkbox] {
   background-color: #8F7FFF;
   color: #FFFFFF;
-}
-
-.btn_apply {
-  width: 96px;
-  height: 40px;
-  background: #8F7FFF;
-  color: #FFFFFF;
-  border-radius: 7px;
-  padding: 8px 28px;
-}
-
-.btn_reset {
-  width: 143px;
-  height: 40px;
-  border: 1px solid #8F7FFF;
-  background: #171E28;
-  color: #8F7FFF;
-  box-sizing: border-box;
-  border-radius: 7px;
-  padding: 8px 28px;
 }
 
 table, .proj_time {
@@ -247,6 +220,50 @@ table td:last-child, .proj_time td:last-child {
 
 .proj_time td {
   border-bottom: 1px solid #3D444E;
+}
+
+.decor, .decor-med {
+  position: absolute;
+  left: 0%;
+  right: 98.77%;
+  top: 23.6%;
+  bottom: 23.6%;
+}
+
+.decor-med {
+  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+  border-radius: 7px 0px 0px 7px;
+  transform: rotate(-180deg);
+}
+
+.scroll {
+  position: absolute;
+  width: 8px;
+  height: 248px;
+  left: 630px;
+  top: 86px;
+  background: rgba(143, 127, 255, 0.25);
+  border-radius: 7px;
+}
+
+.btn_apply {
+  width: 96px;
+  height: 40px;
+  background: #8F7FFF;
+  color: #FFFFFF;
+  padding: 8px 28px;
+  border-radius: 7px;
+}
+
+.btn_reset {
+  width: 143px;
+  height: 40px;
+  background: #171E28;
+  color: #8F7FFF;
+  padding: 8px 28px;
+  border-radius: 7px;
+  border: 1px solid #8F7FFF;
+  box-sizing: border-box;
 }
 
 .card, .proj, .time, .info {
