@@ -1,10 +1,21 @@
 //small components
 
+@mixin link ($color: $light) {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: $color  
+}
+
 //lines
 .line {
   @include border(0, $additional);  
 }
-.line_4 {
+.nav__line {
+  @extend .line;
+  width: $head-height;
+  transform: rotate(-90deg);
+}
+.header__line {
   @extend .line;
   @include position-elem(0%, 0%, 100%, 0%);
 }

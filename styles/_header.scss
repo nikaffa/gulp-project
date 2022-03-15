@@ -1,10 +1,11 @@
-@use "sass:math";
-
 //header
+
 .header {
-  @include layout-main(absolute, $lead-width * 1, math.div($lead-height * 3, 100));
+  @include layout-main(absolute, 100%, 100%);
+  max-width: 100%;
   left: 0px;
   top: 0px;
+  
 
   //logo
   .logo {
@@ -18,16 +19,10 @@
 
 .header_view-lead {
   @extend .header;
-  max-width: 100%;
-  background-color: $secondary;
-
-  nav div a {
-    @include a;
-    &:hover {
-      @include a($main)
-    }
-  }
+  width: $lead-width;
+  height: $head-height;
 }
+
 
 
 

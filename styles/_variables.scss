@@ -1,5 +1,7 @@
 // import google font
+@use "sass:math";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 
 //theme colors
 $primary: #171E28;
@@ -23,8 +25,15 @@ $base-font-weight: 400;
 
 $base-border: 1px;
 
+$base-width: 1440px;
+$base-height: 2068px;
+
 $lead-width: 1440px;
 $lead-height: 2068px;
+
+$head-width: $base-width;
+$head-height: math.div($base-height * 3, 100);
+
 
 //functions
 @function light-comp($color) {
