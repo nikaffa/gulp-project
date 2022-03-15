@@ -1,8 +1,23 @@
+@use "sass:math";
+
 //header
-.header .header_view-lead {
-  @include layout-main(absolute, $lead-width, 68px);
+.header {
+  @include layout-main(absolute, $lead-width * 1, math.div($lead-height * 3, 100));
   left: 0px;
   top: 0px;
+
+  //logo
+  .logo {
+    @include position-elem(4.17%, 84.17%, 23.53%, 23.53%)
+  }
+  //avatar
+  .avatar {
+    @include position-elem(92.78%, 4.17%, 17.65%, 17.65%)
+  }
+}
+
+.header_view-lead {
+  @extend .header;
   max-width: 100%;
   background-color: $secondary;
 
@@ -13,3 +28,7 @@
     }
   }
 }
+
+
+
+

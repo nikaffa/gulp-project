@@ -22,7 +22,8 @@
   background-color: $primary;
   @include margin();
 }
-.body .body_view-lead{
+.body_view-lead{
+  @extend .body;
   @include layout-main(relative, $lead-width, $lead-height); 
   // @include margin();
 }

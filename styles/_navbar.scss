@@ -15,13 +15,3 @@
     box-sizing: border-box;
   }
 }
-
-//logo
-.logo {
-  @include position-elem(4.17%, 84.17%, 23.53%, 23.53%)
-}
-
-//avatar
-.avatar {
-  @include position-elem(92.78%, 4.17%, 17.65%, 17.65%)
-}
