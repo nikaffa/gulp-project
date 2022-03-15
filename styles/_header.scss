@@ -1,12 +1,10 @@
 //header
 
 .header {
-  @include layout-main(absolute, 100%, 100%);
+  @include position-elem(0, 0, 0, 0);
   max-width: 100%;
-  left: 0px;
-  top: 0px;
-  
-
+  background-color: $secondary;
+ 
   //logo
   .logo {
     @include position-elem(4.17%, 84.17%, 23.53%, 23.53%)

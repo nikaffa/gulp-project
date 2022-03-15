@@ -10,7 +10,8 @@
     
   </head>
   <body class="body body_view-lead">
-     <!--  header          -->
+    
+     <!--  header  -->
     <header class="header header_view-lead">
   
   <div class="header__logo logo">
@@ -50,40 +51,43 @@
     <div class="nav__line line"> </div>
     
   </nav>
-  <!-- <div class="line_3"> </div> -->
 
   <div class="header__avatar avatar"> <img class="img" src="images/avatar.png" alt="avatar"></div>
-  <div class="header__line line line_4"></div>
+  <div class="header__line line"></div>
 </header>
 
     
+    
     <!--  filters  -->
-    <div class="filters">
-      <div class="filters_section">
-        <form>
+    <div class="filters filters_view-lead">
+      <div class="filters__section">
+        <form class="form">
           <label for="name">Dev</label><br>
           <select class="select_text" id="name" name="name">
             <option value="Jenny Wilson">Jenny Wilson</option>
           </select>
         </form>
       </div>
-      <div class="filters_section">
-         <form>
-          <label for="status">Status</label><br>
-          <select class="select_text" id="status" name="status">
+      <div class="filters__section">
+         <form class="form">
+          <label class="form__label" for="status">Status</label><br>
+          <select class="form__select select_text" id="status" name="status">
             <option value="All Statuses">All Statuses</option>
           </select>
       </form>
       </div>
-      <div class="filters_section ">
-        <form>
+      <div class="filters__section ">
+        <form class="form">
           <input type="checkbox" checked="checked">
-          <label for="efficiency"> Show efficiency</label>
+          <label class="form__label" for="efficiency"> Show efficiency</label>
         </form>
       </div>
-      <button class="btn_apply">Apply</button>
-      <button class="btn_reset">Reset filters</button>
+
+      <button class="btn btn_apply">Apply</button>
+      <button class="btn btn_reset">Reset filters</button>
     </div>
+
+    
 
     <!--  left tab proj info    -->
     <div class="card proj info card_view-lead">

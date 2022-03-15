@@ -1,9 +1,8 @@
-@mixin layout-main($position, $width, $height){
-  position: $position;
+@mixin layout-main($width, $height){
   width: $width;
   height: $height;  
 }
-@mixin position-elem($left, $right, $top, $bm){ //change to: position-elem
+@mixin position-elem($left: 0, $right: 0, $top: 0, $bm: 0){
   position: absolute;
   left: $left;
   right: $right;
@@ -14,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // height: 100%;
   flex-grow: 1;
 }
 
@@ -24,9 +22,10 @@
 }
 .body_view-lead{
   @extend .body;
-  @include layout-main(relative, $lead-width, $lead-height); 
-  // @include margin();
+  position: relative;
+  @include layout-main($lead-width, $lead-height); 
 }
+
 
 
 
