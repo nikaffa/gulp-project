@@ -27,5 +27,15 @@ table {
   td {
     border-bottom: $base-border solid $additional;
   }
-};
+}
+
+.table_content {
+  @extend %flex-layout;
+  flex-direction: column;
+}
+.row_table {
+  background: #2D333D;
+  border-radius: 7px;
+  margin: 1% 0;
+}
 

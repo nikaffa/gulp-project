@@ -52,21 +52,23 @@ top: 839px;
   overflow-y: scroll;
 }
 
-.single {
-  @extend .card;
+.card_single {
+  position: absolute;
+  background: $primary;
+
 width: 1320px;
 height: 798px;
 left: 60px;
 top: 1142px;
+color: $white;
 }
 
 .hdr_table {
   position: absolute;
 left: 0%;
 right: 0.08%;
-top: 0%;
-bottom: 92.73%;
-
+// top: 0%;
+// bottom: 92.73%;
 @extend %flex-layout;
 background: $highlighter;
 border-radius: $base-border * 7;
@@ -74,3 +76,4 @@ border-radius: $base-border * 7;
   margin: 0 0 0 10%
  }
 }
+
