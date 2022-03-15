@@ -89,52 +89,10 @@
   height: 2068px;
 }
 
-.line, .header__line, .nav__line {
+.line, .nav__menu .nav__line, .header .header__line, .header_view-lead .header__line {
   border: 1px solid #3D444E;
   box-sizing: border-box;
   border-radius: 0;
-}
-
-.nav__line {
-  width: 62.04px;
-  transform: rotate(-90deg);
-}
-
-.header__line {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 100%;
-  bottom: 0%;
-}
-
-.select_text {
-  background-color: #242B35;
-  color: #B6B4C6;
-  width: 100%;
-  top: 137px;
-  margin: 8px 0;
-  padding: 10px 12px;
-  border: 1px solid #B6B4C6;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.select_num {
-  background-color: #242B35;
-  color: #B6B4C6;
-  width: 100%;
-  top: 137px;
-  margin: 8px 0;
-  padding: 10px 12px;
-  border: 1px solid #B6B4C6;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-input[type=checkbox] {
-  background-color: #8F7FFF;
-  color: #FFFFFF;
 }
 
 .decor, .decor-sm, .decor-med {
@@ -178,14 +136,21 @@ input[type=checkbox] {
   max-width: 100%;
   background-color: #242B35;
 }
-.header .logo, .header_view-lead .logo {
+.header .header__line, .header_view-lead .header__line {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 100%;
+  bottom: 0%;
+}
+.header .header__logo, .header_view-lead .header__logo {
   position: absolute;
   left: 4.17%;
   right: 84.17%;
   top: 23.53%;
   bottom: 23.53%;
 }
-.header .avatar, .header_view-lead .avatar {
+.header .header__avatar, .header_view-lead .header__avatar {
   position: absolute;
   left: 92.78%;
   right: 4.17%;
@@ -226,6 +191,10 @@ input[type=checkbox] {
   text-decoration-line: none;
   color: #8F7FFF;
 }
+.nav__menu .nav__line {
+  width: 62.04px;
+  transform: rotate(-90deg);
+}
 
 footer div {
   display: flex;
@@ -258,6 +227,15 @@ footer div span {
   bottom: 0;
   width: 900px;
   height: 69px;
+}
+
+.form .form__select {
+  border: 1px solid #B6B4C6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 12px;
+  background-color: #242B35;
+  color: #B6B4C6;
 }
 
 .tables {

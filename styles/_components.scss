@@ -1,5 +1,6 @@
 //small components
 
+//links
 @mixin link ($color: $light) {
   text-decoration: none;
   text-decoration-line: none;
@@ -9,38 +10,6 @@
 //lines
 .line {
   @include border(0, $additional);  
-}
-.nav__line {
-  @extend .line;
-  width: $head-height;
-  transform: rotate(-90deg);
-}
-.header__line {
-  @extend .line;
-  @include position-elem(0%, 0%, 100%, 0%);
-}
-
-//select form
-@mixin select{
-  background-color: $secondary;
-  color: $light;
-  width: 100%;
-  top: 137px;
-  @include margin(8px, 0);
-  @include padding(5, 6);
-  @include border(4px, $light)
-}
-.select_text{
-  @include select();
-}
-.select_num{
-  @include select();
-}
-
-//checkbox form
-input[type="checkbox"]{
-  background-color: $main;
-  color: $white;
 }
 
 //decors

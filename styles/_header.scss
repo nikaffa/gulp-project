@@ -5,12 +5,17 @@
   max-width: 100%;
   background-color: $secondary;
  
+  //horizontal line
+  .header__line {
+    @extend .line;
+    @include position-elem(0%, 0%, 100%, 0%);
+  }
   //logo
-  .logo {
+  .header__logo {
     @include position-elem(4.17%, 84.17%, 23.53%, 23.53%)
   }
   //avatar
-  .avatar {
+  .header__avatar {
     @include position-elem(92.78%, 4.17%, 17.65%, 17.65%)
   }
 }

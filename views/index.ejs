@@ -14,28 +14,30 @@
      <!--  header  -->
     <%- include('./partials/_header') %>
     
-    
+ 
     <!--  filters  -->
     <div class="filters filters_view-lead">
       <div class="filters__section">
+  
         <form class="form">
-          <label for="name">Dev</label><br>
-          <select class="select_text" id="name" name="name">
+          <label class="form__label" for="name">Dev</label><br>
+          <select class="form__select"  name="name">
             <option value="Jenny Wilson">Jenny Wilson</option>
           </select>
         </form>
+ 
       </div>
       <div class="filters__section">
          <form class="form">
           <label class="form__label" for="status">Status</label><br>
-          <select class="form__select select_text" id="status" name="status">
+          <select class="form__select form__select_text" id="status" name="status">
             <option value="All Statuses">All Statuses</option>
           </select>
       </form>
       </div>
       <div class="filters__section ">
         <form class="form">
-          <input type="checkbox" checked="checked">
+          <input class="form__input_checkbox" type="checkbox" checked="checked">
           <label class="form__label" for="efficiency"> Show efficiency</label>
         </form>
       </div>
