@@ -23,6 +23,9 @@ $base-font-weight: 400;
 
 $base-border: 1px;
 
+$lead-width: 1440px;
+$lead-height: 2068px;
+
 //functions
 @function light-comp($color) {
   $complement: complement($color);

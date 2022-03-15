@@ -1,0 +1,15 @@
+//header
+.header .header_view-lead {
+  @include layout-main(absolute, $lead-width, 68px);
+  left: 0px;
+  top: 0px;
+  max-width: 100%;
+  background-color: $secondary;
+
+  nav div a {
+    @include a;
+    &:hover {
+      @include a($main)
+    }
+  }
+}

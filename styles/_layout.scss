@@ -22,11 +22,10 @@
   background-color: $primary;
   @include margin();
 }
-.body .body__view1440{
-  @include layout-main(relative, 1440px, 2068px); 
+.body .body_view-lead{
+  @include layout-main(relative, $lead-width, $lead-height); 
   // @include margin();
 }
-
 
 
 @mixin a ($color: $light) {
@@ -35,22 +34,6 @@
   color: $color  
 }
 
-
-
-header {
-  @include layout-main(absolute, 100%, 68px);
-  left: 0px;
-  top: 0px;
-  max-width: 100%;
-  background-color: $secondary;
-
-  nav div a {
-    @include a;
-    &:hover {
-      @include a($main)
-    }
-  }
-}
 
 
 // .menu-item-summary {

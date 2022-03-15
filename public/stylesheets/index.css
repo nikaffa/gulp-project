@@ -83,27 +83,27 @@
   margin: 0% 0%;
 }
 
-.body .body__view1440 {
+.body .body_view-lead {
   position: relative;
   width: 1440px;
   height: 2068px;
 }
 
-header {
+.header .header_view-lead {
   position: absolute;
-  width: 100%;
+  width: 1440px;
   height: 68px;
   left: 0px;
   top: 0px;
   max-width: 100%;
   background-color: #242B35;
 }
-header nav div a {
+.header .header_view-lead nav div a {
   text-decoration: none;
   text-decoration-line: none;
   color: #B6B4C6;
 }
-header nav div a:hover {
+.header .header_view-lead nav div a:hover {
   text-decoration: none;
   text-decoration-line: none;
   color: #8F7FFF;
