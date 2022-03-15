@@ -1,10 +1,9 @@
-@mixin layout-main($position, $width, $height, $bg-color){
+@mixin layout-main($position, $width, $height){
   position: $position;
   width: $width;
-  height: $height;
-  background-color: $bg-color;
+  height: $height;  
 }
-@mixin layout-elem($left, $right, $top, $bm){
+@mixin position-elem($left, $right, $top, $bm){ //change to: position-elem
   position: absolute;
   left: $left;
   right: $right;
@@ -18,22 +17,32 @@
   // height: 100%;
   flex-grow: 1;
 }
+
+.body {
+  background-color: $primary;
+  @include margin();
+}
+.body .body__view1440{
+  @include layout-main(relative, 1440px, 2068px); 
+  // @include margin();
+}
+
+
+
 @mixin a ($color: $light) {
   text-decoration: none;
   text-decoration-line: none;
   color: $color  
 }
 
-body {
-  @include layout-main(relative, 1440px, 2068px, $primary); 
-  @include margin();
-}
+
 
 header {
-  @include layout-main(absolute, 100%, 68px, $secondary);
+  @include layout-main(absolute, 100%, 68px);
   left: 0px;
   top: 0px;
   max-width: 100%;
+  background-color: $secondary;
 
   nav div a {
     @include a;

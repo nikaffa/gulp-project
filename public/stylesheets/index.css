@@ -78,22 +78,25 @@
   flex-grow: 1;
 }
 
-body {
+.body {
+  background-color: #171E28;
+  margin: 0% 0%;
+}
+
+.body .body__view1440 {
   position: relative;
   width: 1440px;
   height: 2068px;
-  background-color: #171E28;
-  margin: 0% 0%;
 }
 
 header {
   position: absolute;
   width: 100%;
   height: 68px;
-  background-color: #242B35;
   left: 0px;
   top: 0px;
   max-width: 100%;
+  background-color: #242B35;
 }
 header nav div a {
   text-decoration: none;

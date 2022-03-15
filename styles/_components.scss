@@ -6,7 +6,7 @@
 }
 .line_4 {
   @extend .line;
-  @include layout-elem(0%, 0%, 100%, 0%);
+  @include position-elem(0%, 0%, 100%, 0%);
 }
 
 //select form

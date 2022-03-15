@@ -1,7 +1,7 @@
 //nav
 
 .hdr_projects {
-  @include layout-elem(19.72%, 11.11%, 0%, 0%);
+  @include position-elem(19.72%, 11.11%, 0%, 0%);
   @extend %flex-layout;
 }
 .menu_item {
@@ -18,10 +18,10 @@
 
 //logo
 .logo {
-  @include layout-elem(4.17%, 84.17%, 23.53%, 23.53%)
+  @include position-elem(4.17%, 84.17%, 23.53%, 23.53%)
 }
 
 //avatar
 .avatar {
-  @include layout-elem(92.78%, 4.17%, 17.65%, 17.65%)
+  @include position-elem(92.78%, 4.17%, 17.65%, 17.65%)
 }
