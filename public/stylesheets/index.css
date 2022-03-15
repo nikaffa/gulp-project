@@ -71,7 +71,7 @@
   font-weight: 700;
 }
 
-.tables, .filters, .menu_item, .hdr_projects {
+.hdr_table, .tables, .filters, .menu_item, .hdr_projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,14 +295,14 @@ input[type=checkbox] {
   color: #8F7FFF;
 }
 
-.card, .eff, .proj, .time, .info {
+.card, .single, .eff, .proj, .time, .info {
   position: absolute;
   background: #242B35;
   border: 1px solid #3D444E;
   box-sizing: border-box;
   border-radius: 7px;
 }
-.card .content, .eff .content, .proj .content, .time .content, .info .content {
+.card .content, .single .content, .eff .content, .proj .content, .time .content, .info .content {
   position: absolute;
   left: 0.15%;
   right: 0.15%;
@@ -346,4 +346,24 @@ input[type=checkbox] {
 
 .scrolling-box {
   overflow-y: scroll;
+}
+
+.single {
+  width: 1320px;
+  height: 798px;
+  left: 60px;
+  top: 1142px;
+}
+
+.hdr_table {
+  position: absolute;
+  left: 0%;
+  right: 0.08%;
+  top: 0%;
+  bottom: 92.73%;
+  background: #2D333D;
+  border-radius: 7px;
+}
+.hdr_table table, .hdr_table .proj_time {
+  margin: 0 0 0 10%;
 }
