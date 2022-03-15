@@ -71,7 +71,7 @@
   font-weight: 700;
 }
 
-.hdr_table, .table_content, .tables, .filters, .menu_item, .hdr_projects {
+.hdr_table, .pages, .table_content, .tables, .filters, .menu_item, .hdr_projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,6 +274,10 @@ input[type=checkbox] {
   top: 86px;
   background: rgba(143, 127, 255, 0.25);
   border-radius: 7px;
+}
+
+.pages {
+  background: rgba(143, 127, 255, 0.25);
 }
 
 .btn_apply {

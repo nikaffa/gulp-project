@@ -67,3 +67,7 @@ border-radius: 7px;
 }
 
 
+.pages {
+  @extend %flex-layout;
+  background: rgba(143, 127, 255, 0.25);
+}
