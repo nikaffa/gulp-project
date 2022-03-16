@@ -39,3 +39,17 @@ table {
   margin: 1% 0;
 }
 
+
+.hdr_table {
+  position: absolute;
+left: 0%;
+right: 0.08%;
+// top: 0%;
+// bottom: 92.73%;
+@extend %flex-layout;
+background: $highlighter;
+border-radius: $base-border * 7;
+ table {
+  margin: 0 0 0 10%
+ }
+}

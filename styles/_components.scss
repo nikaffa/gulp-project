@@ -12,29 +12,20 @@
   @include border(0, $additional);  
 }
 
-//decors
-.decor {
-  position: absolute;
-left: 0%;
-right: 98.77%;
-top: 23.6%;
-bottom: 23.6%;
-background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
-  border-radius: 7px 0px 0px 7px;
-  transform: rotate(-180deg);
-}
-.decor-med {
-  @extend .decor;
-  
-}
-.decor-sm {
-  @extend .decor;
-  left: 0%;
-right: 99.47%;
-top: 19.77%;
-bottom: 19.39%;
-}
 
+.tag{
+  @include border(15px, $border);
+  align-items: center;
+  @include padding(1, 6); //3, 12 fix
+  width: 29%;
+  flex-direction: row;
+  display: flex;
+//   position: absolute;
+// left: 29.63%;
+// right: 54.94%;
+// top: 57.59%;
+// bottom: 38.45%;
+}
 //scroll
 .scroll {
   position: absolute;

@@ -1,79 +1,59 @@
+//cards
 
 .card {
   position: absolute;
   background: $secondary;
   @include border(7px, $additional);
-  .content {
-    position: absolute;
-    left: 0.15%;
-    right: 0.15%;
-    top: 6.6%;
-    bottom: 0.17%;
+  .card__name {
     text-align: center;
-    margin: 0 0 4% 10%; //fix
   }
+  .card__content {
+    @include position-elem(0.15%, 0.15%, 6.6%, 0.17%);
+    margin: 1% 0 4% 10%; //fix
+    text-align: center; 
+    overflow-y: scroll; 
+  }
+  .card__decor { 
+    border-radius: 7px 0px 0px 7px;
+    transform: rotate(-180deg);
+    background: $gradient;  
+  }  
+}
 
-}
-.proj{
-@extend .card;
-width: 648px;
-height: 606px;
-top: 209px;
-}
-.info {
-  @extend .proj;
+.card__proj-info {
+  @extend .card;
+  @include layout-main(648px, 606px);
+  top: 209px;
   left: 60px;
 }
-.time {
-  @extend .proj;
+.card__proj-time {
+  @extend .card;
+  @include layout-main(648px, 606px);
+  top: 209px;
   left: 732px;
 }
-.tag{
-  @include border(15px, $border);
-  align-items: center;
-  @include padding(1, 6); //3, 12 fix
-  width: 29%;
-  flex-direction: row;
-  display: flex;
-//   position: absolute;
-// left: 29.63%;
-// right: 54.94%;
-// top: 57.59%;
-// bottom: 38.45%;
-}
-.eff {
+.card__eff {
   @extend .card;
-  width: 1320px;
-height: 263px;
-left: 60px;
-top: 839px;
+  @include layout-main(1320px, 263px);
+  top: 839px;
+  left: 60px;
 }
-.scrolling-box{
-  overflow-y: scroll;
-}
-
-.card_single {
+.card__single {
+  @include layout-main(1320px, 798px);
   position: absolute;
   background: $primary;
-
-width: 1320px;
-height: 798px;
-left: 60px;
-top: 1142px;
-color: $white;
+  top: 1142px;
+  left: 60px;
 }
 
-.hdr_table {
-  position: absolute;
-left: 0%;
-right: 0.08%;
-// top: 0%;
-// bottom: 92.73%;
-@extend %flex-layout;
-background: $highlighter;
-border-radius: $base-border * 7;
- table {
-  margin: 0 0 0 10%
- }
+//decors
+.card__decor-med {
+  @extend .card__decor;  
+  @include position-elem(0%, 98.77%, 23.6%, 23.6%);
 }
+.card__decor-sm {
+  @extend .card__decor;
+  @include position-elem(0%, 99.47%, 19.77%, 19.39%);
+}
+
 
