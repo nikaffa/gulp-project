@@ -208,17 +208,21 @@
   transform: rotate(-90deg);
 }
 
-footer div {
-  display: flex;
+.footer {
   width: 50%;
-  position: absolute;
-  height: 18px;
-  left: 576px;
-  top: 2040px;
+}
+.footer .footer__text {
   color: #FFFFFF;
 }
-footer div span {
-  color: #8F7FFF;
+
+.footer_view-lead {
+  position: absolute;
+  left: 576px;
+  right: 0;
+  top: 2040px;
+  bottom: 0;
+  width: 100%;
+  height: 18px;
 }
 
 .filters {

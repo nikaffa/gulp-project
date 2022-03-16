@@ -12,32 +12,28 @@
   @include border(0, $additional);  
 }
 
-
+//tag
 .tag{
   @include border(15px, $border);
   align-items: center;
-  @include padding(1, 6); //3, 12 fix
+  @include padding(1, 6);
   width: 29%;
   flex-direction: row;
   display: flex;
-//   position: absolute;
-// left: 29.63%;
-// right: 54.94%;
-// top: 57.59%;
-// bottom: 38.45%;
 }
+
 //scroll
 .scroll {
   position: absolute;
-width: 8px;
-height: 248px;
-left: 630px;
-top: 86px;
-background: rgba(143, 127, 255, 0.25);
-border-radius: 7px;
+  width: 8px;
+  height: 248px;
+  left: 630px;
+  top: 86px;
+  background: rgba(143, 127, 255, 0.25);
+  border-radius: 7px;
 }
 
-
+//for pagination
 .pages {
   @extend %flex-layout;
   background: rgba(143, 127, 255, 0.25);

@@ -1,9 +1,12 @@
+//fonts
+
 @mixin font($font-size: $base-font-size, $line-height: $base-line-height, $font-weight: $base-font-weight){
   font-family: $font-family;
   font-style: normal;
   font-size: $font-size; 
   font-weight: $font-weight;
 }
+
 /* 12 regular */
 .font12_rgl {
   @include font($base-font-size - 2);

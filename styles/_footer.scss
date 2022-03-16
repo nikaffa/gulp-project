@@ -1,15 +1,10 @@
-footer div{
-  display: flex;
-    width: 50%;
-  position: absolute;
-  
-  height: 18px;
-  left: 576px;
-  top: 2040px;
-  color: $white;
-
-  span {
-    color: $main;
-
+.footer{
+  width: 50%;
+  .footer__text {
+   color: $white; 
   }
+}
+.footer_view-lead {
+  @include position-elem(576px, 0, 2040px, 0);
+  @include layout-main(100%, 18px);
 }
