@@ -26,6 +26,13 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+.card__content-double {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
 .card__proj-info {
   @extend .card;
@@ -60,6 +67,7 @@
 }
 .card__time_estim {
   margin-right: 5%;
+  width: 50%;
 }
 
 //decors
