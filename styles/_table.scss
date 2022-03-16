@@ -39,6 +39,12 @@ table {
   margin: 1% 0;
 }
 
+.tr-right {
+  text-align: right;
+}
+.tr-boardered {
+  border-bottom: $base-border solid $additional;
+}
 
 .hdr_table {
   position: absolute;

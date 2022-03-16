@@ -52,7 +52,7 @@
       <h4 class="card__name font16_bld color_white" >Project Information</h4>
       <div class="card__content"> 
 
-        <table class="table">
+        <table class="table table__info">
           <tr class="tr">
             <td class="font14_sbld color_lil">Project name</td>
             <td class="font14_rgl color_light">Science & Information platform</td>
@@ -94,85 +94,136 @@
       </div>
     </div>
 
-     <!--  right tab proj time   -->
+    <!--  right tab proj time   -->
     <div class="card card__proj-time">
       <div class="card__decor card__decor-med"></div>
       <h4 class="card__name font16_bld color_white">Project Time</h4>
-      <div class="card__content">
-        <div class="table">
-          <table class="proj_time">  
-            <tr class="tr">
-              <th>Total time(Hours)</th>
-              <td class="font14_sbld color_lil">Changes</td>
-              <td class="font14_rgl color_light">2067h</td>
-            </tr>
-            <tr class="tr">
-              <td class="font14_sbld color_lil">Origin</td>
-              <td class="font14_rgl color_light">1660h
-                <tr class="tr">
-                  <td>Programming</td>
-                  <td>2345h</td>
-                </tr>
-                <tr class="tr">
-                  <td>Markup</td>
-                  <td>27h</td>
-                </tr>  
-              </td>
-            </tr>
-            <tr class="tr">Sum</tr>
-            <td class="font14_sbld color_lil">15000h</td>
-         </table>
+      <div class="card__content card__content-multiple">
 
-       <!-- <table class="proj_time">
-        <tr>
-          <th>Total time(Hours)</th>
-          <td class="font14_sbld color_lil">Changes</td>
-          <td class="font14_rgl color_light">2067h</td>
-        </tr>
-     </table> -->
-
+        <!--  table total time   -->
+        <div class="card__time_total">
+          <table class="table table__time">  
+            <tr class="tr">
+              <th colspan="2" class="font14_rgl color_lil">Total time(Hours)</th>  
+            </tr>
+            <tr class="tr-boardered">
+              <td class="font14_bld color_light">Changes</td>
+              <td class="font14_bld color_light">2067h</td>
+            </tr>
+            <tr class="tr-boardered">
+              <td class="font14_bld color_light">Origin</td>
+              <td class="font14_bld color_light">1660h</td>
+             </tr>
+             <tr class="tr-boardered">
+              <td class="font14_rgl color_light">Programming</td>
+              <td class="font14_rgl color_light">160h</td>
+             </tr>
+             <tr class="tr-boardered">
+              <td class="font14_rgl color_light">Programming</td>
+              <td class="font14_rgl color_light">160h</td>
+             </tr>
+             <tr class="tr-boardered">
+              <td class="font14_rgl color_light">Programming</td>
+              <td class="font14_rgl color_light">160h</td>
+             </tr>
+             <tr class="tr-boardered">
+              <td class="font14_rgl color_light">Programming</td>
+              <td class="font14_rgl color_light">160h</td>
+             </tr>
+             <tr class="tr-boardered">
+              <td class="font14_rgl color_light">Programming</td>
+              <td class="font14_rgl color_light">160h</td>
+             </tr>
+            <tr class="tr">
+              <td class="font14_bld color_light">Sum</td>
+              <td class="font14_bld color_light">15000h</td>
+            </tr>
+           
+          </table>
         </div>
-        
-      </div>
-      
+
+        <!--  table cur month time   -->
+        <div class="card__time_cur">
+          <table class="table table__cur">  
+            <tr class="tr">
+              <th colspan="2" class="font14_rgl color_lil">Time(Hours) by current month (<%= %>)</th>
+            </tr>
+            <tr class="tr-boardered">
+              <td class="font14_bld color_light">Changes</td>
+              <td class="font14_bld color_light">2067h</td>
+            </tr>
+            <tr class="tr-boardered">
+              <td class="font14_bld color_light">Origin</td>
+              <td class="font14_bld color_light">1660h</td>
+             </tr>
+             <tr class="tr-boardered">
+              <td class="font14_rgl color_light">Programming</td>
+              <td class="font14_rgl color_light">160h</td>
+             </tr>
+             <tr class="tr">
+              <td class="font14_bld color_light">Sum</td>
+              <td class="font14_bld color_light">15000h</td>
+            </tr>
+          </table>
+        </div>
+
+        <!--  table estimated time   -->
+        <div class="card__time_estim">
+          <table class="table table__estim">  
+            <tr class="tr">
+              <th colspan="2" class="font14_rgl color_lil">Estimations</th>
+            </tr>
+            <tr class="tr-boardered">
+              <td class="font14_bld color_light">Changes</td>
+              <td class="font14_bld color_light">2067h</td>
+            </tr>
+            <tr class="tr-boardered">
+              <td class="font14_bld color_light">Origin</td>
+              <td class="font14_bld color_light">1660h</td>
+             </tr>
+             <tr class="tr">
+              <td class="font14_bld color_light">Sum</td>
+              <td class="font14_bld color_light">15000h</td>
+            </tr>
+          </table>
+        </div> 
+      </div>  
     </div>
      
      <!--  below tab proj efficiency    -->
     <div class="card card__eff">
       <div class="card__decor card__decor-sm"></div>
-      <div class="content">
-        <h4 class="font16_bld color_white">Efficiency</h4>
-        <div class="tables">
-          <table>
-            <th class="font14_sbld color_lil">Total efficiency</th>
-            <tr class="font14_rgl color_light">Changes
-            </tr>  
-            <tr class="font14_rgl color_light">Origin
-              <td class="font14_sbld color_lil">2345h</td>
-              <td class="font14_rgl color_light">100%</td>
-            </tr>
-            <tr class="font14_rgl color_light">Average
-              <td class="font14_sbld color_lil">2345h</td>
-              <td class="font14_rgl color_light">100%</td>
-            </tr>
-          </table>
-          <table>
-            <th class="font14_sbld color_lil">Efficiency by current month</th>
-            <tr class="font14_rgl color_light">Changes
-            </tr>  
-            <tr class="font14_rgl color_light">Origin
-              <td class="font14_sbld color_lil">507h</td>
-              <td class="font14_rgl color_light">100%</td>
-            </tr>
-            <tr class="font14_rgl color_light">Average
-              <td class="font14_sbld color_lil">507h</td>
-              <td class="font14_rgl color_light">100%</td>
-            </tr>
-          </table>
-          
+        <div class="content">
+          <h4 class="font16_bld color_white">Efficiency</h4>
+          <div class="tables">
+            <table>
+              <th class="font14_sbld color_lil">Total efficiency</th>
+              <tr class="font14_rgl color_light">Changes
+              </tr>  
+              <tr class="font14_rgl color_light">Origin
+                <td class="font14_sbld color_lil">2345h</td>
+                <td class="font14_rgl color_light">100%</td>
+              </tr>
+              <tr class="font14_rgl color_light">Average
+                <td class="font14_sbld color_lil">2345h</td>
+                <td class="font14_rgl color_light">100%</td>
+              </tr>
+            </table>
+            <table>
+              <th class="font14_sbld color_lil">Efficiency by current month</th>
+              <tr class="font14_rgl color_light">Changes
+              </tr>  
+              <tr class="font14_rgl color_light">Origin
+                <td class="font14_sbld color_lil">507h</td>
+                <td class="font14_rgl color_light">100%</td>
+              </tr>
+              <tr class="font14_rgl color_light">Average
+                <td class="font14_sbld color_lil">507h</td>
+                <td class="font14_rgl color_light">100%</td>
+              </tr>
+            </table>    
+        </div>
       </div>
-
-    </div>
     </div>
 
     <!-- last tab single project-->

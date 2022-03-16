@@ -270,6 +270,14 @@ table th, .proj_time th {
   margin: 1% 0;
 }
 
+.tr-right {
+  text-align: right;
+}
+
+.tr-boardered {
+  border-bottom: 1px solid #3D444E;
+}
+
 .hdr_table {
   position: absolute;
   left: 0%;
@@ -327,7 +335,7 @@ table th, .proj_time th {
   right: 0.15%;
   top: 6.6%;
   bottom: 0.17%;
-  margin: 1% 0 4% 10%;
+  margin: 4% 0 4% 10%;
   text-align: center;
   overflow-y: scroll;
 }
@@ -335,6 +343,14 @@ table th, .proj_time th {
   border-radius: 7px 0px 0px 7px;
   transform: rotate(-180deg);
   background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+}
+
+.card__content-multiple {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .card__proj-info {
@@ -365,6 +381,18 @@ table th, .proj_time th {
   background: #171E28;
   top: 1142px;
   left: 60px;
+}
+
+.card__time_total {
+  margin-right: 5%;
+}
+
+.card__time_cur {
+  margin-right: 5%;
+}
+
+.card__time_estim {
+  margin-right: 5%;
 }
 
 .card__decor-med {

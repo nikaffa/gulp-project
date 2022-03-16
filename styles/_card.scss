@@ -9,7 +9,7 @@
   }
   .card__content {
     @include position-elem(0.15%, 0.15%, 6.6%, 0.17%);
-    margin: 1% 0 4% 10%; //fix
+    margin: 4% 0 4% 10%; //fix
     text-align: center; 
     overflow-y: scroll; 
   }
@@ -18,6 +18,13 @@
     transform: rotate(-180deg);
     background: $gradient;  
   }  
+}
+.card__content-multiple {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .card__proj-info {
@@ -44,6 +51,15 @@
   background: $primary;
   top: 1142px;
   left: 60px;
+}
+.card__time_total {
+  margin-right: 5%;
+}
+.card__time_cur {
+  margin-right: 5%;
+}
+.card__time_estim {
+  margin-right: 5%;
 }
 
 //decors
