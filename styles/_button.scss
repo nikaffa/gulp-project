@@ -1,7 +1,8 @@
 //buttons
-@mixin btn($width, $bg-color: $primary, $color: $main ) {
+
+@mixin btn($width, $height, $bg-color, $color) {
 width: $width;
-height: 40px;
+height: $height;
 background: $bg-color;
 color: $color;
 @include padding(4, 14);
@@ -9,13 +10,14 @@ color: $color;
 }
 
 .btn_apply{
-@include btn(96px, $main, $white);
+@include btn(96px, 40px, $main, $white);
   &:hover {
-    background-color: light-comp($main)
+    background-color: light-comp($main);
+    color: $main
   }
 }
 .btn_reset{
-@include btn(143px);
+@include btn(143px, 40px, $primary, $main);
   &:hover {
     background-color: light-comp($main);
     color: $main

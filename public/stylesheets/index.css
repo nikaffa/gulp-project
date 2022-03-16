@@ -287,6 +287,7 @@ table th, .proj_time th {
 }
 .btn_apply:hover {
   background-color: #f2ff99;
+  color: #8F7FFF;
 }
 
 .btn_reset {

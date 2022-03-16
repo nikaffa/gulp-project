@@ -1,4 +1,5 @@
 //filters container
+
 .filters {
   @extend %flex-layout;
   flex-direction: row;
@@ -8,7 +9,7 @@
     width: 150px;
     color: $light;
     align-self: center;
-}
+  }
 }
 .filters_view-lead {
   @include position-elem(25px, 0, 108px, 0);
