@@ -349,8 +349,9 @@ table th, .proj_time th {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
+  align-content: space-around;
 }
 
 .card__content-double {
