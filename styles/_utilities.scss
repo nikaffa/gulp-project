@@ -1,4 +1,4 @@
-//utilities (borders, margin, padding, opacity)
+//utilities (borders, margin, padding)
 
 @mixin border($radius, $color){
   border: $base-border solid $color;
