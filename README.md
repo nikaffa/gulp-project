@@ -1,7 +1,6 @@
 # GULP project
 - A Front-End task of creating a markup of a one-page design to learn:  
-- BEM methodology
-![BEM methodology](https://en.bem.info/methodology/quick-start/)
+- [BEM methodology](https://en.bem.info/methodology/quick-start/)
 - Gulp built tool to build a project automatically
 ![Gulp](https://gulpjs.com/)
 - Sass/SCSS
