@@ -31,6 +31,23 @@
   color: #27AE60;
 }
 
+/* 12 regular */
+.font12_rgl {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* 12 semibold */
+.font12_sbld {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  font-weight: 600;
+}
+
 /* 14 regular */
 .font14_rgl {
   font-family: "Open Sans", sans-serif;
@@ -233,23 +250,37 @@ footer div span {
   color: #B6B4C6;
 }
 
-.table, .table__estim, .table__time, .table__info {
+.table, .table__snglproj, .table__estim, .table__time, .table__info {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
 }
-.table .td, .table__estim .td, .table__time .td, .table__info .td {
+.table .td, .table__snglproj .td, .table__estim .td, .table__time .td, .table__info .td {
   padding: 8px 12px;
   white-space: nowrap;
 }
-.table .td:last-child, .table__estim .td:last-child, .table__time .td:last-child, .table__info .td:last-child {
+.table .td:last-child, .table__snglproj .td:last-child, .table__estim .td:last-child, .table__time .td:last-child, .table__info .td:last-child {
   white-space: normal;
 }
-.table .th, .table__estim .th, .table__time .th, .table__info .th {
+.table .th, .table__snglproj .th, .table__estim .th, .table__time .th, .table__info .th {
   text-align: left;
 }
-.table .tr-boardered, .table__estim .tr-boardered, .table__time .tr-boardered, .table__info .tr-boardered {
+.table .tr-boardered, .table__snglproj .tr-boardered, .table__estim .tr-boardered, .table__time .tr-boardered, .table__info .tr-boardered {
   border-bottom: 1px solid #3D444E;
+}
+
+.table__snglproj {
+  text-align: center;
+}
+.table__snglproj .tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.table__snglproj .td-sm {
+  white-space: normal;
+  width: 15%;
+  padding: 5px;
 }
 
 .btn_apply {
@@ -282,17 +313,23 @@ footer div span {
   color: #8F7FFF;
 }
 
-.card, .card__eff, .card__proj-time, .card__proj-info {
+.card, .card__row, .card__single, .card__eff, .card__proj-time, .card__proj-info {
   position: absolute;
   background: #242B35;
   border: 1px solid #3D444E;
   box-sizing: border-box;
   border-radius: 7px;
 }
-.card .card__name, .card__eff .card__name, .card__proj-time .card__name, .card__proj-info .card__name {
+.card .card__name, .card__row .card__name, .card__single .card__name, .card__eff .card__name, .card__proj-time .card__name, .card__proj-info .card__name {
   text-align: center;
 }
-.card .card__content, .card__eff .card__content, .card__proj-time .card__content, .card__proj-info .card__content {
+.card .card__decor, .card .card__decor-sm, .card .card__decor-med, .card__row .card__decor, .card__row .card__decor-sm, .card__row .card__decor-med, .card__single .card__decor, .card__single .card__decor-sm, .card__single .card__decor-med, .card__eff .card__decor, .card__eff .card__decor-sm, .card__eff .card__decor-med, .card__proj-time .card__decor, .card__proj-time .card__decor-sm, .card__proj-time .card__decor-med, .card__proj-info .card__decor, .card__proj-info .card__decor-sm, .card__proj-info .card__decor-med {
+  border-radius: 7px 0px 0px 7px;
+  transform: rotate(-180deg);
+  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+}
+
+.card__content, .card__content-nomargin {
   position: absolute;
   left: 0.15%;
   right: 0.15%;
@@ -302,10 +339,9 @@ footer div span {
   text-align: center;
   overflow-y: scroll;
 }
-.card .card__decor, .card .card__decor-sm, .card .card__decor-med, .card__eff .card__decor, .card__eff .card__decor-sm, .card__eff .card__decor-med, .card__proj-time .card__decor, .card__proj-time .card__decor-sm, .card__proj-time .card__decor-med, .card__proj-info .card__decor, .card__proj-info .card__decor-sm, .card__proj-info .card__decor-med {
-  border-radius: 7px 0px 0px 7px;
-  transform: rotate(-180deg);
-  background: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
+
+.card__content-nomargin {
+  margin: 0% 0%;
 }
 
 .card__content-multiple {
@@ -349,10 +385,10 @@ footer div span {
 .card__single {
   width: 1320px;
   height: 798px;
-  position: absolute;
-  background: #171E28;
   top: 1142px;
   left: 60px;
+  background: #171E28;
+  border: none;
 }
 
 .card__time_total {
@@ -366,6 +402,12 @@ footer div span {
 .card__time_estim {
   margin-right: 5%;
   width: 50%;
+}
+
+.card__row {
+  left: 0%;
+  right: 0.08%;
+  background: #292f39;
 }
 
 .card__decor-med {

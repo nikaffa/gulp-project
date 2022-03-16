@@ -19,6 +19,8 @@ $green: #27AE60;
 
 $gradient: linear-gradient(350.45deg, #BFBAFA 15.3%, #624BFF 87.74%, #8F7FFF 87.74%, #7F76F7 87.74%);
 
+$gradient-blk: mix($primary, $highlighter, 20%);
+
 //fonts
 $font-family: 'Open Sans', sans-serif;
 $base-font-size: 14px;

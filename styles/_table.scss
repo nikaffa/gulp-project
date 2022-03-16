@@ -1,8 +1,4 @@
 //tables
-// .tables {
-//   @extend %flex-layout;
-//   flex-direction: row;
-// }
 
 .table {
   width: 100%;
@@ -14,7 +10,7 @@
     &:last-child {
       white-space: normal;
     }
-  }  
+  } 
   .th {
     text-align: left;
   }
@@ -32,31 +28,17 @@
 .table__estim {
   @extend .table;
 }
-
-
-// .table_content {
-//   @extend %flex-layout;
-//   flex-direction: column;
-// }
-// .row_table {
-//   background: #2D333D;
-//   border-radius: 7px;
-//   margin: 1% 0;
-// }
-
-
-
-
-// .hdr_table {
-//   position: absolute;
-// left: 0%;
-// right: 0.08%;
-// // top: 0%;
-// // bottom: 92.73%;
-// @extend %flex-layout;
-// background: $highlighter;
-// border-radius: $base-border * 7;
-//  table {
-//   margin: 0 0 0 10%
-//  }
-// }
+.table__snglproj{
+  @extend .table;
+  text-align: center;
+  .tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .td-sm {
+    white-space: normal;
+    width: 15%;
+    padding: 5px;
+  } 
+}
