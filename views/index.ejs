@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheets -->
     <link rel="stylesheet" href="/stylesheets/index.css" type="text/css" />
-    <title><%= title %></title>
-    
+    <title><%= title %></title>  
   </head>
+
   <body class="body body_view-lead">
     
      <!--  header  -->
     <%- include('./partials/_header') %>
-    
  
     <!--  filters tab -->
     <div class="filters filters_view-lead">
@@ -28,14 +27,14 @@
  
       </div>
       <div class="filters__section">
-         <form class="form">
+        <form class="form">
           <label class="form__label" for="status">Status</label><br>
           <select class="form__select form__select_text" id="status" name="status">
-            <option value="All Statuses">All Statuses</option>
+            <option class="form__select_option" value="All Statuses">All Statuses</option>
           </select>
-      </form>
+        </form>
       </div>
-      <div class="filters__section ">
+      <div class="filters__section">
         <form class="form">
           <input class="form__input_checkbox" type="checkbox" checked="checked">
           <label class="form__label" for="efficiency"> Show efficiency</label>
@@ -284,7 +283,7 @@
     </div>
  
     <!--pagination coming below-->
-    
-  </body>
-  <%- include('./partials/_footer') %>
+
+    <%- include('./partials/_footer') %>
+  </body>  
 </html>
