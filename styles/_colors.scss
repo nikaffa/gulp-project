@@ -11,7 +11,7 @@ $colors: (
 );
 
 @each $key, $val in $colors {
-  .color-#{$key} {
+  .color_#{$key} {
     color: $val;
   }
 }

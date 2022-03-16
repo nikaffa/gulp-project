@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-.color-primary {
+.color_primary {
   color: #171E28;
 }
 
-.color-secondary {
+.color_secondary {
   color: #242B35;
 }
 
-.color-main {
+.color_main {
   color: #8F7FFF;
 }
 
-.color-white {
+.color_white {
   color: #FFFFFF;
 }
 
-.color-light {
+.color_light {
   color: #B6B4C6;
 }
 
-.color-lil {
+.color_lil {
   color: #C7BFFF;
 }
 
-.color-error {
+.color_error {
   color: #FF6A59;
 }
 
-.color-green {
+.color_green {
   color: #27AE60;
 }
 
