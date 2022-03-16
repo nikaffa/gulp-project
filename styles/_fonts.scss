@@ -1,41 +1,30 @@
-.font {
+@mixin font($font-size: $base-font-size, $line-height: $base-line-height, $font-weight: $base-font-weight){
   font-family: $font-family;
   font-style: normal;
-  font-size: $base-font-size;
-}
-.font_14 {
-  @extend .font;
-  line-height: $base-line-height;
-}
-.font_16 {
-  @extend .font;
-  font-size: $base-font-size + 2;
-  line-height: $base-line-height + 1;
-}
-/* 14 regular */
-.font_14_regular {
-  @extend .font_14;
-  font-weight: $base-font-weight;
+  font-size: $font-size; 
+  font-weight: $font-weight;
 }
 
+/* 14 regular */
+.font14_rgl {
+  @include font();
+}
 /* 14 semibold */
-.font_14_semibold {
-  @extend .font_14;
+.font14_sbld {
+  @include font();
   font-weight: $base-font-weight * 1.5;
 }
-  /* 14 bold */
-.font_14_bold {
-  @extend .font_14;
+/* 14 bold */
+.font14_bld {
+  @include font();
   font-weight: $base-font-weight * 1.75;
 }
   
 /* 16 regular */
-.font_16_regular {
-  @extend .font_14;
-  font-weight: $base-font-weight;
+.font16_rglr {
+  @include font($base-font-size + 2, $base-line-height + 1);
 }
 /* 16 bold */
-.font_16_bold {
-  @extend .font_16;
-  font-weight: $base-font-weight * 1.75;
+.font16_bld {
+  @include font($base-font-size + 2, $base-line-height + 1, $base-font-weight * 1.75);
 }

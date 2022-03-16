@@ -31,43 +31,45 @@
   color: #27AE60;
 }
 
-.font, .font_16, .font_16_bold, .font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
+/* 14 regular */
+.font14_rgl {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 14px;
-}
-
-.font_14, .font_16_regular, .font_14_bold, .font_14_semibold, .font_14_regular {
-  line-height: 21px;
-}
-
-.font_16, .font_16_bold {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-/* 14 regular */
-.font_14_regular {
   font-weight: 400;
 }
 
 /* 14 semibold */
-.font_14_semibold {
+.font14_sbld {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
   font-weight: 600;
 }
 
 /* 14 bold */
-.font_14_bold {
+.font14_bld {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
   font-weight: 700;
 }
 
 /* 16 regular */
-.font_16_regular {
+.font16_rglr {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
   font-weight: 400;
 }
 
 /* 16 bold */
-.font_16_bold {
+.font16_bld {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
   font-weight: 700;
 }
 
